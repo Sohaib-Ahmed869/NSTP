@@ -120,7 +120,7 @@ const Events = () => {
   };
 
   return (
-    <div className="mt-28 p-20">
+    <div className="mt-24 p-20 pb-5">
       <h1 className="mb-10 text-3xl font-extrabold leading-none tracking-tight text-gray-900 text-center flex items-center justify-center gap-2">
         <BiCalendar size={40} className="inline-block" />
         UPCOMING EVENTS AT{" "}
@@ -131,7 +131,7 @@ const Events = () => {
       <div
         className="flex flex-col gap-10 border-2 rounded-lg p-10 hover:shadow-xl transition duration-500 overflow-y-auto"
         style={{
-          height: "70vh",
+          height: "60vh",
           backgroundImage: `url(${nstp})`,
           backgroundSize: "cover",
         }}

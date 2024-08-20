@@ -100,11 +100,11 @@ const Innovate = () => {
         </div>
         <img src={innovate} alt="Pakistan Map" className="w-1/4 rounded-3xl" />
       </div>
-      <div className="bg-gray-100 p-20">
+      <div className="bg-[#9CE37D] py-16 px-20">
         <h1 className="text-2xl font-bold mb-2">
           NSTP - A PLATFORM FOR INNOVATION
         </h1>
-        <p className="text-md">
+        <p className="text-md text-justify text-gray-700">
           Innovate Pakistan is the centralised platform focus to the promotion
           and support of technology and digitalization of Pakistan. It aims to
           make it simple for startups to nurture and groom, for companies to
@@ -117,7 +117,7 @@ const Innovate = () => {
       </div>
       <div className="grid grid-cols-3 gap-10 p-20 mb-20">
         {cardInfo.map((info) => (
-          <div className="bg-gray-100 p-5 rounded-lg">
+          <div className="bg-[#FBF5F3] p-5 rounded-lg">
             <h1 className="text-2xl font-bold">{info.title}</h1>
             <p className="text-gray-700 text-justify mt-2">
               {info.description}

@@ -168,7 +168,7 @@ const Sectors = () => {
             <img
               src={sector.image}
               alt={sector.name}
-              className="w-1/3 rounded-3xl"
+              className="w-1/3 rounded-l-3xl h-60 object-cover"
             />
             <div className="p-5 w-2/3">
               <div className="flex items-center gap-5 mb-4">
