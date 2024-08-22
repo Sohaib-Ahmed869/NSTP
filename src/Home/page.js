@@ -10,6 +10,8 @@ import ban from "../Assets/nstp.jpg";
 import nstp from "../Assets/nstp.png";
 import decor from "../Assets/robo-arm.png";
 
+import "../App.css";
+
 const Home = () => {
   return (
     <div className="">
@@ -22,22 +24,34 @@ const Home = () => {
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
-        className="flex flex-col items-center justify-center"
+        className="flex flex-col items-start"
       >
-        <img src={nstp} alt="nstp" className="w-44" />
-        <p className="text-4xl text-white text-center mt-5 font-bold slide-left">
-          NSTP
-        </p>
-        <p className="text-2xl text-white text-center slide-left">
-          Defining Innovation
-        </p>
-        <h3 className="text-4xl text-green-400 text-center mt-5 font-bold">
-          Pakistan's First Science Park
-        </h3>
-        <h2 className="text-4xl text-white text-center mt-5">
-          Hi-Tech Economic Zone
-        </h2>
-        <div className="flex w-full bottom-0 absolute">
+        <div className="flex items-center p-10 mt-36">
+          <div>
+            <p className="text-5xl text-white text-left mt-5 font-bold slide-left hollow-text">
+              NATIONAL SCIENCE & TECHNOLOGY PARK
+            </p>
+            {/* <p className="text-2xl text-white text-left slide-left">
+              Defining Innovation
+            </p> */}
+            <h3 className="text-3xl text-white italic text-left mt-3 font-bold">
+              Pakistan's First Science Park
+            </h3>
+            <h2 className="text-xl text-white text-left mt-2 italic">
+              Hi-Tech Economic Zone
+            </h2>
+          </div>
+        </div>
+        <div className="flex items-center justify-center font-bold p-5 pt-0">
+          <button className="bg-transparent border border-white text-white p-3 px-5 hover:bg-green-600 hover:text-white rounded-lg ml-5">
+            Learn More
+          </button>
+          <button className="bg-transparent border border-white text-white hover:bg-green-600 hover:text-white p-3 px-5 rounded-lg ml-5">
+            Contact Us
+          </button>
+        </div>
+
+        <div className="flex w-full bottom-0 absolute justify-between pr-10">
           <div className="relative flex items-center justify-center">
             <div
               className=" text-white absolute z-20 flex flex-col items-center rounded-full hover:bg-black hover:text-white p-3 px-5 cursor-pointer"
@@ -47,6 +61,21 @@ const Home = () => {
               <h1 className="text-sm font-bold">Pitch Us</h1>
             </div>
             <img src={pitchu} alt="pitchu" className="w-44 animate-spin-slow" />
+          </div>
+          <div className="text-right flex flex-col items-end gap-5">
+            <h1 className="text-4xl text-white text-right flex items-baseline">
+              Pakistan's
+              <div className="flex">
+                <span className="text-green-400 hollow-text3">1</span>
+                <span className="text-white hollow-text2 text-sm items-start justify-start">
+                  st
+                </span>
+              </div>
+              <br />
+            </h1>
+            <h1 className="text-4xl text-white text-right flex items-center">
+              Technology & Science Park
+            </h1>
           </div>
         </div>
       </div>
