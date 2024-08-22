@@ -10,6 +10,7 @@ import Innovate from "./Innovate/innovate";
 import Partnerships from "./Partnerships/partnerships";
 import Events from "./Events/page";
 import Sectors from "./Sectors/page";
+import Mentors from "./Mentors/page";
 
 const Layout = () => {
   return (
@@ -26,6 +27,7 @@ const Layout = () => {
         <Route path="/partnerships" element={<Partnerships />} />
         <Route path="/events" element={<Events />} />
         <Route path="/sectors" element={<Sectors />} />
+        <Route path="/mentors" element={<Mentors />} />
       </Routes>
     </div>
   );
