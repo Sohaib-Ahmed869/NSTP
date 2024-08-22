@@ -26,7 +26,7 @@ const Home = () => {
         }}
         className="flex flex-col items-start"
       >
-        <div className="flex items-center p-10 mt-36">
+        <div className="flex items-center p-10 mt-28">
           <div>
             <p className="text-5xl text-white text-left mt-5 font-bold slide-left hollow-text">
               NATIONAL SCIENCE & TECHNOLOGY PARK
