@@ -5,12 +5,94 @@ import Statistics from "./Stats/stats";
 import pitchu from "../Assets/pitchus.png";
 import { FiArrowUpRight } from "react-icons/fi";
 import Typewriter from "typewriter-effect";
+import nstplogocolored from "../Assets/nstplogocolored.png";
 
 import ban from "../Assets/nstp.jpg";
 import nstp from "../Assets/nstp.png";
 import decor from "../Assets/robo-arm.png";
 
+import { BiCalendar, BiWorld } from "react-icons/bi";
+import { FaSchool, FaSeedling, FaUserFriends } from "react-icons/fa";
+import { PiPerson } from "react-icons/pi";
+
+import Footer from "../Footer/footer";
+
 import "../App.css";
+
+const NSTPStats = [
+  {
+    icon: <BiCalendar size={50} />,
+    title: "Oct 2020",
+    value: "Established",
+  },
+  {
+    icon: <FaSchool size={50} />,
+    title: "100+",
+    value: "Hi-Tech Companies",
+  },
+  {
+    icon: <FaSeedling size={50} />,
+    title: "64",
+    value: "Startups",
+  },
+  {
+    icon: <BiWorld size={50} />,
+    title: "15+",
+    value: "International Firms",
+  },
+  {
+    icon: <PiPerson size={50} />,
+    title: "6000+",
+    value: "Hi-Tech Jobs Created",
+  },
+  {
+    icon: <FaUserFriends size={50} />,
+    title: "2000+",
+    value: "Internships Provided",
+  },
+];
+
+const NSTPAbout = () => {
+  return (
+    <div className="p-40">
+      <div className="flex flex-row justify-between items-center gap-20">
+        <div className="w-3/4">
+          <h1 className="mb-4 text-3xl font-extrabold leading-none tracking-tight text-gray-900">
+            NATIONAL SCIENCE AND TECHNOLOGY PARK -{" "}
+            <span className="text-green-400">
+              PAKISTAN'S PREMIER TECHNOLOGY PARK FOR SCIENCE AND TECHNOLOGY
+            </span>
+          </h1>
+          <p className="text-md font-normal text-gray-500 mb-10 leading-6 text-justify">
+            National Science and Technology Park (NSTP) is a technology park
+            located in Islamabad, Pakistan. The park is home to a number of
+            high-tech companies, startups, and international firms. The park is
+            designed to foster innovation and collaboration among its tenants,
+            and to provide them with the resources they need to succeed. NSTP is
+            also home to a number of research centers and institutes, and is
+            known for its strong research program. The park is also home to a
+            number of educational institutions, and is a hub for technology
+            education and training. NSTP is committed to promoting science and
+            technology in Pakistan, and to helping the country develop a strong,
+            knowledge-based economy.
+          </p>
+        </div>
+        <img src={nstplogocolored} alt="Pakistan Map" className="w-1/5"></img>
+      </div>
+      {
+        <div className="flex flex-row justify-between gap-20 mt-20">
+          {NSTPStats.map((stat) => (
+            <div className="flex flex-col items-center">
+              <div className="rounded-full p-4 bg-[#d6f8cb]">{stat.icon}</div>
+              <h2 className="text-lg font-bold mt-4">{stat.title}</h2>
+              <p className="text-md font-normal text-gray-500">{stat.value}</p>
+            </div>
+          ))}
+        </div>
+      }
+    </div>
+  );
+};
 
 const Home = () => {
   return (
@@ -116,6 +198,8 @@ const Home = () => {
       </div>
       <Statistics />
       <Service />
+      <NSTPAbout />
+      <Footer />
     </div>
   );
 };

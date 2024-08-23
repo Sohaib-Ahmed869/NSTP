@@ -5,8 +5,10 @@ import { AiFillStar } from "react-icons/ai";
 import { HiOutlineCalendar } from "react-icons/hi";
 import { FaRegBuilding } from "react-icons/fa";
 import { GiLightBulb } from "react-icons/gi";
+import nstplogocolored from "../../Assets/nstplogocolored.png";
 
 import workers from "../../Assets/workers.png";
+
 
 const services = [
   {
@@ -53,6 +55,9 @@ const services = [
   },
 ];
 
+
+
+
 const Service = () => {
   const windowHeight = window.innerHeight;
 
@@ -65,15 +70,6 @@ const Service = () => {
     overflow: "hidden", // To hide content that overflows due to the curved corners
   };
 
-  const bottomContainerStyle = {
-    width: "100%",
-    height: `${windowHeight * 0.090935961}px`,
-    backgroundColor: "black",
-
-    borderBottomLeftRadius: "100% 200%",
-    borderBottomRightRadius: "100% 200%",
-    overflow: "hidden", // To hide content that overflows due to the curved corners
-  };
   return (
     <div className="mt-48">
       <div style={containerStyle}></div>
@@ -111,7 +107,7 @@ const Service = () => {
           </div>
         </div>
       </div>
-      <div style={bottomContainerStyle}></div>
+
     </div>
   );
 };

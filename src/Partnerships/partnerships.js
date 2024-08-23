@@ -5,6 +5,7 @@ import iAcceleratelogo from "../Assets/logos/iAccelerateLogo.png";
 import ibichinalogo from "../Assets/logos/ibi-chinalogo.png";
 import INSTPlogo from "../Assets/logos/INSTPlogo.png";
 import WTAlogo from "../Assets/logos/WTAlogo.jpg";
+import Footer from "../Footer/footer";
 
 const data = [
   {
@@ -47,25 +48,28 @@ const data = [
 
 const Partnerships = () => {
   return (
-    <div className="mt-28 p-20">
-      <h1 className="text-4xl mb-5">Associations & Partnerships</h1>
-      <p className="text-gray-700 text-justify mb-10">
-        NSTP is member and in strategic Alliance with the following
-        International organizations
-      </p>
-      <div className="grid grid-cols-3 gap-10">
-        {data.map((item) => (
-          <div className="p-10 rounded-lg border-2">
-            <div className=" h-36 flex items-center">
-              <img src={item.logo} alt={item.name} className="h-20" />
+    <div>
+      <div className="mt-28 p-20">
+        <h1 className="text-4xl mb-5">Associations & Partnerships</h1>
+        <p className="text-gray-700 text-justify mb-10">
+          NSTP is member and in strategic Alliance with the following
+          International organizations
+        </p>
+        <div className="grid grid-cols-3 gap-10">
+          {data.map((item) => (
+            <div className="p-10 rounded-lg border-2">
+              <div className=" h-36 flex items-center">
+                <img src={item.logo} alt={item.name} className="h-20" />
+              </div>
+              <h1 className="text-2xl font-bold">{item.name}</h1>
+              <p className="text-gray-700 text-justify mt-2">
+                {item.description}
+              </p>
             </div>
-            <h1 className="text-2xl font-bold">{item.name}</h1>
-            <p className="text-gray-700 text-justify mt-2">
-              {item.description}
-            </p>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
+      <Footer />
     </div>
   );
 };

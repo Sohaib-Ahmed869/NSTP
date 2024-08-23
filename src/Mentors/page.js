@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import pfp2 from "../Assets/pfp2.jpeg";
+import Footer from "../Footer/footer";
 
 const data = [
   {
@@ -102,49 +103,52 @@ const Mentors = () => {
 
   const [selectedDepartment, setSelectedDepartment] = useState("All");
   return (
-    <div className="p-20 mt-28">
-      <h1 className="mb-10 text-3xl font-extrabold leading-none tracking-tight text-gray-900 text-center flex gap-2">
-        MEET OUR <span className="text-green-400">MENTORS</span>{" "}
-      </h1>
-      <button
-        className={`bg-black text-white p-2 px-10 rounded-lg mr-5 ${
-          selectedDepartment === "All" ? "bg-green-500" : "hover:bg-green-500"
-        }`}
-        onClick={() => setSelectedDepartment("All")}
-      >
-        All
-      </button>
-      {departments.map((department) => (
+    <div>
+      <div className="p-20 mt-28">
+        <h1 className="mb-10 text-3xl font-extrabold leading-none tracking-tight text-gray-900 text-center flex gap-2">
+          MEET OUR <span className="text-green-400">MENTORS</span>{" "}
+        </h1>
         <button
-          className={`bg-black text-white p-2 rounded-lg mr-5 ${
-            selectedDepartment === department
-              ? "bg-green-500"
-              : "hover:bg-green-500"
+          className={`bg-black text-white p-2 px-10 rounded-lg mr-5 ${
+            selectedDepartment === "All" ? "bg-green-500" : "hover:bg-green-500"
           }`}
-          onClick={() => setSelectedDepartment(department)}
+          onClick={() => setSelectedDepartment("All")}
         >
-          {department}
+          All
         </button>
-      ))}
-      <div className="grid grid-cols-3 gap-5 items-center mt-10">
-        {data.map(
-          (mentor) =>
-            (selectedDepartment === "All" ||
-              mentor.department === selectedDepartment) && (
-              <div className="flex items-center gap-4 p-4 rounded-2xl shadow-xl">
-                <img
-                  src={mentor.image}
-                  alt="mentor"
-                  className="w-20 h-20 rounded-full"
-                />
-                <div>
-                  <h1 className="text-2xl font-bold">{mentor.name}</h1>
-                  <p>{mentor.position}</p>
+        {departments.map((department) => (
+          <button
+            className={`bg-black text-white p-2 rounded-lg mr-5 ${
+              selectedDepartment === department
+                ? "bg-green-500"
+                : "hover:bg-green-500"
+            }`}
+            onClick={() => setSelectedDepartment(department)}
+          >
+            {department}
+          </button>
+        ))}
+        <div className="grid grid-cols-3 gap-5 items-center mt-10">
+          {data.map(
+            (mentor) =>
+              (selectedDepartment === "All" ||
+                mentor.department === selectedDepartment) && (
+                <div className="flex items-center gap-4 p-4 rounded-2xl shadow-xl">
+                  <img
+                    src={mentor.image}
+                    alt="mentor"
+                    className="w-20 h-20 rounded-full"
+                  />
+                  <div>
+                    <h1 className="text-2xl font-bold">{mentor.name}</h1>
+                    <p>{mentor.position}</p>
+                  </div>
                 </div>
-              </div>
-            )
-        )}
+              )
+          )}
+        </div>
       </div>
+      <Footer />
     </div>
   );
 };
