@@ -49,6 +49,15 @@ const CompanyForm = () => {
   return (
     <div className="min-h-screen flex mt-20 justify-center bg-[#FBF5F3]">
       <form className="w-full mx-auto p-20">
+        <p className="text-justify text-sm">
+          <strong className="mr-1">Company Information:</strong> Please provide
+          the following information about your company. NSTP will use this
+          information to create a profile for your company and to match you with
+          the most suitable mentors. Please note that all information provided
+          will be kept confidential. If you have any questions, please contact
+          us at @nstp.io
+        </p>
+
         <div className="relative z-0 w-full mb-5 group">
           <input
             type="text"
@@ -3223,6 +3232,10 @@ const Excelerate = () => {
   return (
     <div className="min-h-screen flex mt-20 justify-center bg-[#FBF5F3]">
       <form className="w-full mx-auto p-20">
+        <p className="text-md text-gray-900">
+          Intense program for late stage startups that need coaching, networking
+          opportunities and access to funding to scale & grow their business.
+        </p>
         <div className="relative z-0 w-full mb-5 group">
           <input
             type="text"

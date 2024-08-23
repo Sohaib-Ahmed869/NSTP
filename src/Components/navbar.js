@@ -79,6 +79,16 @@ const Navbar = () => {
         </a>
         <a
           className={`cursor-pointer ${
+            activeLink === "/mentors"
+              ? "text-green-500"
+              : "hover:text-green-500"
+          }`}
+          onClick={() => handleClick("/mentors")}
+        >
+          Mentors
+        </a>
+        <a
+          className={`cursor-pointer ${
             activeLink === "/contact"
               ? "text-green-500"
               : "hover:text-green-500"
