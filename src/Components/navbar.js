@@ -12,7 +12,10 @@ const Navbar = () => {
   };
 
   return (
-    <div className="z-10 bg-black text-white p-7 rounded-3xl mt-5 mb-5 w-4/5 border-4 border-gray-300 flex justify-between items-center fixed">
+    <div
+      className="z-10 bg-black text-white p-6 rounded-3xl mt-5 mb-5 border-2 border-gray-300 flex justify-between items-center fixed"
+      style={{ width: "85%" }}
+    >
       <div className="flex space-x-5 items-center">
         <img src={nstplogo} alt="nstp" className="w-12" />
         <h1 className="text-2xl text-center border-r-2 pr-5 font-bold">NSTP</h1>
@@ -85,7 +88,7 @@ const Navbar = () => {
           Contact
         </a>
         <a
-          className="hover:text-gray-800 bg-green-500 text-black font-bold p-3 rounded-full cursor-pointer"
+          className="hover:text-gray-800 bg-green-500 text-black font-bold px-4 py-1 rounded-full cursor-pointer"
           onClick={() => handleClick("/tenancy")}
         >
           Pitch us
