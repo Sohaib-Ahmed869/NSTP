@@ -46,7 +46,7 @@ const Tenants = () => {
         {data.map(
           (tenant) =>
             (tenant.floor === activeWing || activeWing === "All") && (
-              <div className="flex items-center gap-4 p-4 rounded-2xl shadow-xl">
+              <div className="flex items-center gap-4 p-4 rounded-2xl shadow-xl h-36">
                 <img
                   src={hexlerLogo}
                   alt="tenant"
