@@ -43,7 +43,7 @@ const Navbar = () => {
           }`}
           onClick={() => handleClick("/innovate")}
         >
-          Innovate
+          Innovate Pakistan
         </a>
         <a
           href="#"
