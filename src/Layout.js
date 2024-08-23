@@ -11,6 +11,7 @@ import Partnerships from "./Partnerships/partnerships";
 import Events from "./Events/page";
 import Sectors from "./Sectors/page";
 import Mentors from "./Mentors/page";
+import Tenants from "./Tenants/tenants";
 
 const Layout = () => {
   return (
@@ -28,6 +29,7 @@ const Layout = () => {
         <Route path="/events" element={<Events />} />
         <Route path="/sectors" element={<Sectors />} />
         <Route path="/mentors" element={<Mentors />} />
+        <Route path="/tenants" element={<Tenants />} />
       </Routes>
     </div>
   );
