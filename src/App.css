@@ -28,6 +28,14 @@
   text-stroke-color: white; /* Stroke color for other browsers */
 }
 
+.hollow-text4 {
+  font-size: 3.5rem; /* Adjust size as needed */
+  font-weight: 600; /* Keep the text bold */
+  color: transparent; /* Make the text itself transparent */
+  -webkit-text-stroke-width: 2px; /* Stroke width */
+  -webkit-text-stroke-color: rgb(255, 255, 255); /* Stroke color */
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
