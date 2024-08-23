@@ -58,9 +58,9 @@ const Tenants = () => {
         {Object.keys(groupedTenants).map((wing) => (
           <div key={wing} className="mb-10">
             <div
-              className="flex items-center w-full h-20 mb-5"
+              className="flex items-center w-full mb-5 rounded-2xl p-7 pl-2 justify-end"
               style={{
-                background: "linear-gradient(to right, #4ade80, #a7f3d0)",
+                background: "linear-gradient(to right, #a7f3d0, #4ade80)",
               }}
             >
               <h2 className="text-2xl ml-10 mb-0 hollow-text4">{wing}</h2>
