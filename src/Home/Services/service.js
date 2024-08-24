@@ -71,35 +71,34 @@ const Service = () => {
   };
 
   return (
-    <div className="mt-48">
-      <div style={containerStyle}></div>
+    <div className="lg:mt-48">
+      <div className="hidden lg:block" style={containerStyle}></div>
       <div className="bg-black">
-        <div className="flex flex-col items-center bg-black w-full relative top-0">
+        <div className="lg:flex lg:flex-col items-center bg-black w-full relative top-0">
           <img
             src={workers}
             alt="workers"
-            className="w-2/3 absolute "
-            style={{ top: "-170px" }}
+            className="lg:w-2/3 lg:absolute lg:-top-44"
           />
         </div>
-        <div className="flex flex-col items-center bg-black w-full mt-36">
-          <p className="text-xl italic text-green-300 text-center mt-10 mb-10">
+        <div className="flex flex-col items-center bg-black w-full lg:mt-36">
+          <p className="text-sm lg:text-xl italic text-green-300 text-center mt-10 mb-10">
             Ready to power your business? <br></br> NSTP offers a range of
             services to help you innovate and grow.
           </p>
-          <h1 className="text-6xl text-white text-center">What We Offer</h1>
-          <div className="bg-black text-white mb-5 p-20 pt-0 pb-0 min-h-screen flex items-center">
-            <div className="grid grid-cols-2 gap-10">
+          <h1 className="text-2xl lg:text-6xl text-white text-center">What We Offer</h1>
+          <div className="bg-black text-white mb-5 p-6 lg:p-20 pt-0 pb-0 min-h-screen flex items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 lg:gap-10">
               {services.map((service) => {
                 return (
                   <div key={service.id} className="p-3">
                     <div className="flex items-center space-x-3">
                       <p className="text-2xl text-green-400">{service.icon}</p>
-                      <h2 className="text-2xl font-semibold text-black-600">
+                      <h2 className="text-lg lg:text-2xl font-semibold text-black-600">
                         {service.title}
                       </h2>
                     </div>
-                    <p className="text-xl font-light">{service.description}</p>
+                    <p className="text-md lg:text-xl font-light">{service.description}</p>
                   </div>
                 );
               })}

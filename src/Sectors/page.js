@@ -23,7 +23,7 @@ import fintech from "../Assets/fintech.jpg";
 import healthtech from "../Assets/healthtech.jpeg";
 import smarttech from "../Assets/smarttech.jpg";
 
-import Footer from "../Footer/footer";
+import Footer from "../Components/footer";
 
 const sectorsInfo = [
   {

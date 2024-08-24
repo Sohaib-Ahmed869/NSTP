@@ -5,7 +5,7 @@ import iAcceleratelogo from "../Assets/logos/iAccelerateLogo.png";
 import ibichinalogo from "../Assets/logos/ibi-chinalogo.png";
 import INSTPlogo from "../Assets/logos/INSTPlogo.png";
 import WTAlogo from "../Assets/logos/WTAlogo.jpg";
-import Footer from "../Footer/footer";
+import Footer from "../Components/footer";
 
 const data = [
   {

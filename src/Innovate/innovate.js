@@ -4,7 +4,7 @@ import innovate from "../Assets/innovatepakistan.jpg";
 import { FaSchool } from "react-icons/fa";
 import { FcManager } from "react-icons/fc";
 import { BiNetworkChart } from "react-icons/bi";
-import Footer from "../Footer/footer";
+import Footer from "../Components/footer";
 
 // Platform for Collaboration – An enabling environment that connects entrepreneurs, researchers, businesses, investors, regulatory bodies, incubators, accelerators and relevant stakeholders on a single platform to come together to collaborate and contribute towards growth and prosperity of Pakistan.
 // Platform for Digitization – Provides digital & physical access plus connectivity to information and knowledge economy through its centralized repository. It’s a platform that supports science and technology education and knowledge sharing that leads to commercial projects with benefits for the ecosystem and society.

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import pfp2 from "../Assets/pfp2.jpeg";
-import Footer from "../Footer/footer";
+import Footer from "../Components/footer";
 
 const data = [
   {

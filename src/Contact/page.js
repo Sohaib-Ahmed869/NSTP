@@ -5,7 +5,7 @@ import { MdEmail } from "react-icons/md";
 import { BiPhone } from "react-icons/bi";
 import { FaFax } from "react-icons/fa";
 import { BiLocationPlus } from "react-icons/bi";
-import Footer from "../Footer/footer";
+import Footer from "../Components/footer";
 
 // Website: nstp.pk
 // Email: info@nstp.pk
