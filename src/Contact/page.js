@@ -28,9 +28,12 @@ const Contact = () => {
   const [message, setMessage] = useState("");
   return (
     <div>
-      <div className="flex flex-row justify-between mt-28 p-20">
-        <form className="p-20 pt-0 w-2/3">
-          <h1 className="text-4xl mb-5">Contact Us</h1>
+      <div
+        className="flex flex-col lg:flex-row lg:justify-between mt-28 p-6 lg:p-20 gap-10 lg:gap-0"
+        style={{ height: "90vh" }}
+      >
+        <form className="lg:p-20 lg:pt-0 lg:w-2/3">
+          <h1 className=" text-2xl lg:text-4xl mb-2 lg:mb-5">Contact Us</h1>
           <div className="relative z-0 w-full mb-5 group">
             <input
               type="text"
@@ -88,7 +91,7 @@ const Contact = () => {
               type="text"
               name="floating_message"
               id="floating_message"
-              className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer h-36"
+              className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer h-24 lg:h-36"
               placeholder=" "
               required
               onChange={(e) => setMessage(e.target.value)}
@@ -109,24 +112,24 @@ const Contact = () => {
           </button>
         </form>
         <div className="flex flex-col gap-4">
-          <h1 className="text-4xl mb-10">Contact Info</h1>
-          <div className="flex items-center space-x-5 mb-5">
+          <h1 className="text-2xl lg:text-4xl mb-2 lg:mb-10">Contact Info</h1>
+          <div className="flex items-center space-x-5 mb-0 lg:mb-5">
             <TbWorldWww size={30} />
             <p>{contactInfo.website}</p>
           </div>
-          <div className="flex items-center space-x-5 mb-5">
+          <div className="flex items-center space-x-5 mb-0 lg:mb-5">
             <MdEmail size={30} />
             <p>{contactInfo.email}</p>
           </div>
-          <div className="flex items-center space-x-5 mb-5">
+          <div className="flex items-center space-x-5 mb-0 lg:mb-5">
             <BiPhone size={30} />
             <p>{contactInfo.phone}</p>
           </div>
-          <div className="flex items-center space-x-5 mb-5">
+          <div className="flex items-center space-x-5 mb-0 lg:mb-5">
             <FaFax size={30} />
             <p>{contactInfo.fax}</p>
           </div>
-          <div className="flex items-center space-x-5 mb-5">
+          <div className="flex items-center space-x-5 mb-0 lg:mb-5">
             <BiLocationPlus size={30} />
             <p>{contactInfo.address}</p>
           </div>
