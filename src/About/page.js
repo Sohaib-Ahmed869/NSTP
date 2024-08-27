@@ -173,14 +173,14 @@ const PakistanAbout = () => {
           className="hidden lg:block lg:w-1/4"
         ></img>
         <div className="lg:w-3/4">
-          <h1 className="mb-4 text-3xl font-extrabold leading-none tracking-tight text-gray-900">
+          <h1 className="mb-4 text-xl lg:text-3xl font-extrabold leading-none tracking-tight text-gray-900">
             PAKISTAN -{" "}
             <span className="text-green-400">
               THE GLOBAL DESTINATION FOR LOVERS OF{" "}
             </span>{" "}
             NATURE, FOOD, HISTORY & HOSPITALITY
           </h1>
-          <p className="text-md font-normal text-gray-500 mb-10 leading-6 text-justify">
+          <p className="text-sm lg:text-md font-normal text-gray-500 mb-10 leading-6 text-justify">
             Pakistan is situated at the western periphery of South Asia and
             ranks among the most significant members of the developing world. It
             is a global destination for the admirers of nature's marvels and
@@ -215,14 +215,14 @@ const IslamabadAbout = () => {
     <div>
       <div className="flex flex-row justify-between items-center gap-20 mt-10">
         <div className="lg:w-3/4">
-          <h1 className="mb-4 text-3xl font-extrabold leading-none tracking-tight text-gray-900">
+          <h1 className="mb-4 text-xl lg:text-3xl font-extrabold leading-none tracking-tight text-gray-900">
             ISLAMABAD -{" "}
             <span className="text-green-400">
               PAKISTAN'S PREMIER LOCATION FOR{" "}
             </span>{" "}
             INNOVATIVE TECHNOLOGY-DRIVEN ENTERPRISES
           </h1>
-          <p className="text-md font-normal text-gray-500 mb-10 leading-6 text-justify">
+          <p className="text-sm lg:text-md font-normal text-gray-500 mb-10 leading-6 text-justify">
             Islamabad is the capital of Pakistan, and is one of the most
             picturesque and beautiful capitals in the world, in addition to
             being a safe and secure city. It is one of the most well planned and
@@ -270,13 +270,13 @@ const NustAbout = () => {
           className="hidden lg:block lg:w-1/4"
         ></img>
         <div className="lg:w-3/4">
-          <h1 className="mb-4 text-3xl font-extrabold leading-none tracking-tight text-gray-900">
+          <h1 className="mb-4 text-xl lg:text-3xl font-extrabold leading-none tracking-tight text-gray-900">
             NATIONAL UNIVERSITY OF SCIENCES AND TECHNOLOGY -{" "}
             <span className="text-green-400">
               PAKISTAN'S PREMIER UNIVERSITY FOR SCIENCE AND TECHNOLOGY
             </span>
           </h1>
-          <p className="text-md font-normal text-gray-500 mb-10 leading-6 text-justify">
+          <p className="text-sm lg:text-md font-normal text-gray-500 mb-10 leading-6 text-justify">
             National University of Sciences and Technology (NUST) is a
             multi-school university with its headquarters in Islamabad,
             Pakistan. The university offers undergraduate and graduate degrees,
@@ -312,13 +312,13 @@ const NSTPAbout = () => {
     <div>
       <div className="flex flex-row justify-between items-center gap-20">
         <div className="lg:w-3/4">
-          <h1 className="mb-4 text-3xl font-extrabold leading-none tracking-tight text-gray-900">
+          <h1 className="mb-4 text-xl lg:text-3xl font-extrabold leading-none tracking-tight text-gray-900">
             NATIONAL SCIENCE AND TECHNOLOGY PARK -{" "}
             <span className="text-green-400">
               PAKISTAN'S PREMIER TECHNOLOGY PARK FOR SCIENCE AND TECHNOLOGY
             </span>
           </h1>
-          <p className="text-md font-normal text-gray-500 mb-10 leading-6 text-justify">
+          <p className="text-sm lg:text-md font-normal text-gray-500 mb-10 leading-6 text-justify">
             National Science and Technology Park (NSTP) is a technology park
             located in Islamabad, Pakistan. The park is home to a number of
             high-tech companies, startups, and international firms. The park is
