@@ -27,7 +27,7 @@ import islamabadpng from "../Assets/islamabadpng.png";
 import nstppng from "../Assets/nstppng.png";
 import nstplogocolored from "../Assets/nstplogocolored.png";
 
-import '../App.css';
+import "../App.css";
 
 SwiperCore.use([Pagination, Mousewheel]);
 
@@ -166,9 +166,13 @@ const NSTPStats = [
 const PakistanAbout = () => {
   return (
     <div>
-      <div className="flex flex-row justify-between items-center gap-20">
-        <img src={pakmap} alt="Pakistan Map" className="w-1/4"></img>
-        <div className="w-3/4">
+      <div className="flex flex-row justify-between items-center lg:gap-20">
+        <img
+          src={pakmap}
+          alt="Pakistan Map"
+          className="hidden lg:block lg:w-1/4"
+        ></img>
+        <div className="lg:w-3/4">
           <h1 className="mb-4 text-3xl font-extrabold leading-none tracking-tight text-gray-900">
             PAKISTAN -{" "}
             <span className="text-green-400">
@@ -192,7 +196,7 @@ const PakistanAbout = () => {
         </div>
       </div>
       {
-        <div className="flex flex-row justify-between gap-20 mt-20">
+        <div className=" hidden lg:flex lg:flex-row justify-between gap-20 mt-20">
           {stats.map((stat) => (
             <div className="flex flex-col items-center">
               <div className="rounded-full p-4 bg-[#d6f8cb]">{stat.icon}</div>
@@ -210,7 +214,7 @@ const IslamabadAbout = () => {
   return (
     <div>
       <div className="flex flex-row justify-between items-center gap-20 mt-10">
-        <div className="w-3/4">
+        <div className="lg:w-3/4">
           <h1 className="mb-4 text-3xl font-extrabold leading-none tracking-tight text-gray-900">
             ISLAMABAD -{" "}
             <span className="text-green-400">
@@ -235,10 +239,14 @@ const IslamabadAbout = () => {
             technology initiatives.
           </p>
         </div>
-        <img src={islamabadpng} alt="Pakistan Map" className="w-1/4"></img>
+        <img
+          src={islamabadpng}
+          alt="Pakistan Map"
+          className="hidden lg:block lg:w-1/4"
+        ></img>
       </div>
       {
-        <div className="flex flex-row justify-between gap-20 mt-20">
+        <div className=" hidden lg:flex lg:flex-row justify-between gap-20 mt-20">
           {IslamabadStats.map((stat) => (
             <div className="flex flex-col items-center">
               <div className="rounded-full p-4 bg-[#d6f8cb]">{stat.icon}</div>
@@ -256,8 +264,12 @@ const NustAbout = () => {
   return (
     <div>
       <div className="flex flex-row justify-between items-center gap-20 mt-10">
-        <img src={nstppng} alt="Pakistan Map" className="w-1/4"></img>
-        <div className="w-3/4">
+        <img
+          src={nstppng}
+          alt="Pakistan Map"
+          className="hidden lg:block lg:w-1/4"
+        ></img>
+        <div className="lg:w-3/4">
           <h1 className="mb-4 text-3xl font-extrabold leading-none tracking-tight text-gray-900">
             NATIONAL UNIVERSITY OF SCIENCES AND TECHNOLOGY -{" "}
             <span className="text-green-400">
@@ -281,7 +293,7 @@ const NustAbout = () => {
         </div>
       </div>
       {
-        <div className="flex flex-row justify-between gap-20 mt-20">
+        <div className=" hidden lg:flex lg:flex-row justify-between gap-20 mt-20">
           {NustStats.map((stat) => (
             <div className="flex flex-col items-center">
               <div className="rounded-full p-4 bg-[#d6f8cb]">{stat.icon}</div>
@@ -299,7 +311,7 @@ const NSTPAbout = () => {
   return (
     <div>
       <div className="flex flex-row justify-between items-center gap-20">
-        <div className="w-3/4">
+        <div className="lg:w-3/4">
           <h1 className="mb-4 text-3xl font-extrabold leading-none tracking-tight text-gray-900">
             NATIONAL SCIENCE AND TECHNOLOGY PARK -{" "}
             <span className="text-green-400">
@@ -320,10 +332,14 @@ const NSTPAbout = () => {
             knowledge-based economy.
           </p>
         </div>
-        <img src={nstplogocolored} alt="Pakistan Map" className="w-1/5"></img>
+        <img
+          src={nstplogocolored}
+          alt="Pakistan Map"
+          className="hidden lg:block lg:w-1/5"
+        ></img>
       </div>
       {
-        <div className="flex flex-row justify-between gap-20 mt-20">
+        <div className=" hidden lg:flex lg:flex-row justify-between gap-20 mt-20">
           {NSTPStats.map((stat) => (
             <div className="flex flex-col items-center">
               <div className="rounded-full p-4 bg-[#d6f8cb]">{stat.icon}</div>
@@ -353,7 +369,7 @@ const About = () => {
     };
   }, []);
   return (
-    <div className="p-20 no-scrollbar overflow-y-hidden">
+    <div className="p-4 lg:p-20 no-scrollbar overflow-y-hidden">
       <Swiper
         direction="vertical"
         slidesPerView={1}

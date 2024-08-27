@@ -67,7 +67,7 @@ const cardInfo = [
 const Innovate = () => {
   return (
     <div>
-      <div className="flex flex-row justify-between items-center gap-20 p-20 mt-28">
+      <div className="flex flex-col lg:flex-row justify-between items-center gap-20 lg:p-20 mt-28">
         <div className="w-3/4">
           <h1 className="mb-10 text-3xl font-extrabold leading-none tracking-tight text-gray-900">
             INNOVATE PAKISTAN -{" "}
@@ -76,7 +76,7 @@ const Innovate = () => {
             </span>{" "}
             NATIONWIDE
           </h1>
-          <div className="flex flex-row gap-10">
+          <div className="flex flex-col lg:flex-row gap-10">
             {innovateInfo.map((info) => (
               <div className="flex flex-row items-center gap-5">
                 <div className="">{info.icon}</div>
@@ -98,7 +98,7 @@ const Innovate = () => {
             and entrepreneurs to develop and realise their true potential.
           </p>
         </div>
-        <img src={innovate} alt="Pakistan Map" className="w-1/4 rounded-3xl" />
+        <img src={innovate} alt="Pakistan Map" className="lg:w-1/4  lg:rounded-3xl" />
       </div>
       <div className="bg-[#9CE37D] py-16 px-20">
         <h1 className="text-2xl font-bold mb-2">
@@ -115,7 +115,7 @@ const Innovate = () => {
           prominent force in the innovation ecosystem and knowledge economy.
         </p>
       </div>
-      <div className="grid grid-cols-3 gap-10 p-20 mb-20">
+      <div className="grid grid-col-1 lg:grid-cols-3 gap-10 p-10 lg:p-20 mb-20">
         {cardInfo.map((info) => (
           <div className="bg-[#FBF5F3] p-5 rounded-lg">
             <h1 className="text-2xl font-bold">{info.title}</h1>
