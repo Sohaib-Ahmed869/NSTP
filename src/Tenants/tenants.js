@@ -26,7 +26,7 @@ const Tenants = () => {
 
   return (
     <div className="p-6 lg:p-20 mt-28">
-      <h1 className="mb-10 text-3xl font-extrabold leading-none tracking-tight text-gray-900 lg:text-center flex lg:flex-row flex-col lg:gap-4">
+      <h1 className="mb-5 lg:mb-10 text-2xl lg:text-3xl font-extrabold leading-none tracking-tight text-gray-900 lg:text-center flex lg:flex-row flex-col lg:gap-4">
         <img src={nstp} alt="nstp" className="w-12" />
         <span className="text-green-400 lg:mt-1">NSTP</span>
         <span className="lg:mt-1"> IS HOME TO</span>{" "}

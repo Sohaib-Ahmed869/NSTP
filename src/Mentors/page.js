@@ -104,12 +104,12 @@ const Mentors = () => {
   const [selectedDepartment, setSelectedDepartment] = useState("All");
   return (
     <div>
-      <div className="p-20 mt-28">
-        <h1 className="mb-10 text-3xl font-extrabold leading-none tracking-tight text-gray-900 text-center flex gap-2">
+      <div className="p-6 lg:p-20 mt-28">
+        <h1 className="mb-5 lg:mb-10 text-2xl lg:text-3xl font-extrabold leading-none tracking-tight text-gray-900 text-center flex gap-2">
           MEET OUR <span className="text-green-400">MENTORS</span>{" "}
         </h1>
         <button
-          className={`bg-black text-white p-2 px-10 rounded-lg mr-5 ${
+          className={`bg-black text-white p-2 px-3 lg:px-10 rounded-lg mr-1 lg:mr-5 ${
             selectedDepartment === "All" ? "bg-green-500" : "hover:bg-green-500"
           }`}
           onClick={() => setSelectedDepartment("All")}
@@ -118,7 +118,7 @@ const Mentors = () => {
         </button>
         {departments.map((department) => (
           <button
-            className={`bg-black text-white p-2 rounded-lg mr-5 ${
+            className={`bg-black text-white p-2 px-3 lg:px-10 rounded-lg mr-1 lg:mr-5 ${
               selectedDepartment === department
                 ? "bg-green-500"
                 : "hover:bg-green-500"
@@ -128,19 +128,21 @@ const Mentors = () => {
             {department}
           </button>
         ))}
-        <div className="grid grid-cols-3 gap-5 items-center mt-10">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-2 lg:gap-5 items-center mt-10">
           {data.map(
             (mentor) =>
               (selectedDepartment === "All" ||
                 mentor.department === selectedDepartment) && (
-                <div className="flex items-center gap-4 p-4 rounded-2xl shadow-xl">
+                <div className="flex items-center gap-4 p-4 rounded-xl lg:rounded-2xl border shadow-xl">
                   <img
                     src={mentor.image}
                     alt="mentor"
-                    className="w-20 h-20 rounded-full"
+                    className="w-16 h-16 lg:w-20 lg:h-20 rounded-full"
                   />
-                  <div>
-                    <h1 className="text-2xl font-bold">{mentor.name}</h1>
+                  <div className="w-2/3 lg:w-4/5">
+                    <h1 className="text-lg lg:text-2xl font-bold">
+                      {mentor.name}
+                    </h1>
                     <p>{mentor.position}</p>
                   </div>
                 </div>

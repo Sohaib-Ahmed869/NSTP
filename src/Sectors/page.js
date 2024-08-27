@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { BiPieChart } from "react-icons/bi";
 import { GrTechnology } from "react-icons/gr";
 import { FaIndustry } from "react-icons/fa";
@@ -112,31 +112,56 @@ const sectorsData = [
 ];
 
 const Sectors = () => {
+  const [mobileView, setMobileView] = useState(false);
+
+  useEffect(() => {
+    if (window.innerWidth < 768) {
+      setMobileView(true);
+    } else {
+      setMobileView(false);
+    }
+  }, []);
+
   return (
     <div>
-      <div className="mt-28 p-20">
-        <div className="flex flex-row justify-between items-center gap-20">
-          <img src={sectors} alt="Pakistan Map" className="w-1/3 rounded-3xl" />
-          <div className="w-2/3">
-            <h1 className="mb-10 text-3xl font-extrabold leading-none tracking-tight text-gray-900">
+      <div className="mt-28 p-6 lg:p-20">
+        <div className="flex flex-col lg:flex-row justify-between items-center gapp-5 lg:gap-20">
+          {!mobileView && (
+            <img
+              src={sectors}
+              alt="Pakistan Map"
+              className="w-3/4 lg:w-1/3 rounded-3xl"
+            />
+          )}
+          <div className="lg:w-2/3">
+            <h1 className="mb-5 lg:mb-10 text-2xl lg:text-3xl font-extrabold leading-none tracking-tight text-gray-900">
               SECTORS AT NSTP -{" "}
               <span className="text-green-400">
                 INNOVATION, ENTREPRENEURSHIP, AND TECHNOLOGY
               </span>{" "}
               NATIONWIDE
             </h1>
-            <div className=" gap-10 grid grid-cols-3">
+            {mobileView && (
+              <div className="flex items-center justify-center">
+                <img
+                  src={sectors}
+                  alt="Pakistan Map"
+                  className="w-3/4 lg:w-1/3 rounded-3xl"
+                />
+              </div>
+            )}
+            {!mobileView && <div className="gap-10 grid grid-cols-2 lg:grid-cols-3">
               {sectorsData.map((info) => (
-                <div className="flex flex-row items-center gap-5">
-                  <div className="">{info.icon}</div>
+                <div className="flex flex-col items-center text-center lg:text-left lg:flex-row lg:items-center lg:justify-start gap-5">
+                  <div>{info.icon}</div>
                   <div>
                     <h1 className="text-2xl font-bold">{info.value}</h1>
                     <p>{info.name}</p>
                   </div>
                 </div>
               ))}
-            </div>
-            <p className="mt-10 text-md text-gray-700 text-justify">
+            </div>}
+            <p className="mt-10 mb-10 lg:mb-0 text-md text-gray-700 text-justify">
               NSTP is a platform launched by NSTP with the ultimate aim of
               emerging as the innovation powerhouse to drive growth and create
               economic activity in the country. It is a platform designed to
@@ -146,13 +171,24 @@ const Sectors = () => {
               entrepreneurship in Pakistan by inspiring and nurturing businesses
               and entrepreneurs to develop and realise their true potential.
             </p>
+            {mobileView && <div className="gap-10 grid grid-cols-2 lg:grid-cols-3">
+              {sectorsData.map((info) => (
+                <div className="flex flex-col items-center text-center lg:text-left lg:flex-row lg:items-center lg:justify-start gap-5">
+                  <div>{info.icon}</div>
+                  <div>
+                    <h1 className="text-2xl font-bold">{info.value}</h1>
+                    <p>{info.name}</p>
+                  </div>
+                </div>
+              ))}
+            </div>}
           </div>
         </div>
-        <h1 className="text-2xl font-bold mb-2 p-20 flex items-center gap-3 pb-0">
+        <h1 className="text-xl lg:text-2xl font-bold lg:mb-2 p-6 lg:p-20 lg:pb-0 flex items-center gap-3 pb-0">
           Pakistan has a strong potential and industry drive to attract new
           high-value investment in particular sectors and thematic areas.
         </h1>
-        <p className="text-md pt-10 p-20 text-gray-600">
+        <p className="text-md lg:pt-10 p-6 lg:p-20 text-gray-600">
           NSTP will be focusing on the thematic areas, which while showing
           potential at the national level, have also been among the areas
           wherein NUST has showed continued promise over many years, and for
@@ -162,23 +198,23 @@ const Sectors = () => {
           comparative advantages within these sectors at the regional level.
           Following are these 8 sectors:
         </p>
-        <div className="flex flex-col gap-10 p-10 transition duration-500">
+        <div className="flex flex-col gap-10 p-6 lg:p-10 transition duration-500">
           {sectorsInfo.map((sector) => (
             <div
               key={sector.name}
-              className="flex flex-row items-start justify-between relative bg-white shadow-xl border hover:scale-105 transition duration-700 transform rounded-3xl"
+              className="flex flex-col lg:flex-row items-start justify-between relative bg-white shadow-xl border hover:scale-105 transition duration-700 transform rounded-3xl"
             >
               <img
                 src={sector.image}
                 alt={sector.name}
-                className="w-1/3 rounded-l-3xl h-60 object-cover"
+                className="lg:w-1/3 w-full rounded-t-2xl lg:rounded-l-3xl h-60 object-cover"
               />
-              <div className="p-5 w-2/3">
+              <div className="p-5 lg:w-2/3">
                 <div className="flex items-center gap-5 mb-4">
                   {sector.icon}
                   <h1 className="text-2xl font-bold">{sector.name}</h1>
                 </div>
-                <p className="text-gray-700">{sector.description}</p>
+                <p className="text-sm lg:texl-md text-gray-700 mb-12">{sector.description}</p>
                 <button className="text-black py-2 px-4 rounded-2xl bg-green-400 flex items-center gap-1 hover:bg-green-600 hover:text-white transition duration-500 absolute bottom-5">
                   Learn More <FaArrowRight size={14} />
                 </button>

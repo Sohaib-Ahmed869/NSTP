@@ -49,16 +49,16 @@ const data = [
 const Partnerships = () => {
   return (
     <div>
-      <div className="mt-28 p-20">
-        <h1 className="text-4xl mb-5">Associations & Partnerships</h1>
+      <div className="mt-28 p-6 lg:p-20">
+        <h1 className="text-2xl lg:text-4xl mb-5">Associations & Partnerships</h1>
         <p className="text-gray-700 text-justify mb-10">
           NSTP is member and in strategic Alliance with the following
           International organizations
         </p>
-        <div className="grid grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
           {data.map((item) => (
-            <div className="p-10 rounded-lg border-2">
-              <div className=" h-36 flex items-center">
+            <div className="p-5 lg:p-10 rounded-lg border-2">
+              <div className="h-36 flex justify-center lg:justify-start items-center">
                 <img src={item.logo} alt={item.name} className="h-20" />
               </div>
               <h1 className="text-2xl font-bold">{item.name}</h1>

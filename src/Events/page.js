@@ -120,18 +120,18 @@ const Events = () => {
   };
 
   return (
-    <div className="mt-24 p-20 pb-5">
-      <h1 className="mb-10 text-3xl font-extrabold leading-none tracking-tight text-gray-900 text-center flex items-center justify-center gap-2">
+    <div className="mt-24 p-6 lg:p-20 lg:pb-5">
+      <h1 className="mb-5 lg:mb-10 flex flex-col lg:flex-row text-2xl lg:text-3xl font-extrabold leading-none tracking-tight text-gray-900 text-center flex items-start lg:items-center lg:justify-center lg:gap-2">
         <BiCalendar size={40} className="inline-block" />
         UPCOMING EVENTS AT{" "}
-        <span className="text-green-400">
+        <span className="text-green-400 text-left">
           NATIONAL SCIENCE & TECHNOLOGY PARK (NSTP)
         </span>{" "}
       </h1>
       <div
-        className="flex flex-col gap-10 border-2 rounded-lg p-10 hover:shadow-xl transition duration-500 overflow-y-auto"
+        className="flex flex-col gap-5 lg:gap-10 border-2 rounded-lg p-5 lg:p-10 hover:shadow-xl transition duration-500 overflow-y-auto"
         style={{
-          height: "60vh",
+          height: "63vh",
           backgroundImage: `url(${nstp})`,
           backgroundSize: "cover",
         }}
@@ -147,11 +147,11 @@ const Events = () => {
                 return (
                   <div
                     key={event.name}
-                    className="mb-5 border-b-2 p-5 rounded-xl shadow-xl bg-white flex flex-row items-start justify-between"
+                    className="mb-5 border-b-2 p-5 rounded-xl shadow-xl bg-white flex-col flex lg:flex-row items-start justify-between"
                   >
-                    <div>
+                    <div className="mb-2 lg:mb-0">
                       <h1 className="text-xl font-bold">{event.name}</h1>
-                      <p className="text-gray-700 text-justify">
+                      <p className="text-gray-700">
                         {event.description}
                       </p>
                       <p className="text-orange-400 font-semibold text-justify">
