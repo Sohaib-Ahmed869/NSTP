@@ -69,7 +69,7 @@ const Innovate = () => {
     <div>
       <div className="flex flex-col lg:flex-row justify-between items-center gap-20 lg:p-20 mt-28">
         <div className="w-3/4">
-          <h1 className="mb-10 text-3xl font-extrabold leading-none tracking-tight text-gray-900">
+          <h1 className="mb-10 text-xl lg:text-3xl font-extrabold leading-none tracking-tight text-gray-900">
             INNOVATE PAKISTAN -{" "}
             <span className="text-green-400">
               INNOVATION, ENTREPRENEURSHIP, AND TECHNOLOGY
