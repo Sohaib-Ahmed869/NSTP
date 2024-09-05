@@ -2,7 +2,7 @@ import React from "react";
 import Service from "./Services/service";
 import Statistics from "./Stats/stats";
 
-import pitchus from "../Assets/pitchus.png";
+import pitchus from "../Assets/preview.png";
 import { FiArrowUpRight } from "react-icons/fi";
 import Typewriter from "typewriter-effect";
 import nstplogocolored from "../Assets/nstplogocolored.png";
@@ -90,8 +90,12 @@ const NSTPAbout = () => {
               <div className="rounded-full p-2 lg:p-4 bg-[#d6f8cb]">
                 {stat.icon}
               </div>
-              <div className="text-md lg:text-lg font-bold mt-4">{stat.title}</div>
-              <p className="text-sm lg:text-md text-center font-normal text-gray-500">{stat.value}</p>
+              <div className="text-md lg:text-lg font-bold mt-4">
+                {stat.title}
+              </div>
+              <p className="text-sm lg:text-md text-center font-normal text-gray-500">
+                {stat.value}
+              </p>
             </div>
           ))}
         </div>
@@ -122,27 +126,19 @@ const Home = () => {
             {/* <p className="text-2xl text-white text-left slide-left">
               Defining Innovation
             </p> */}
-            <h3 className="text-xl md:text-3xl text-white italic text-left mt-3 font-bold">
-              Pakistan's First Science Park
+            <h3 className="text-xl md:text-5xl text-white italic text-left mt-10 font-bold">
+              Innovation PowerHouse of Pakistan
             </h3>
             <h2 className="text-sm md:text-xl text-white text-left mt-2 italic">
-              Hi-Tech Economic Zone
+              Hi-Tech Economic Zone and STZA approved by GoP
             </h2>
           </div>
-        </div>
-        <div className="flex items-center justify-center font-bold p-5 pt-0 gap-3 lg:gap-5 lg:ml-5">
-          <button className="lg:text-md md:text-sm text-xs bg-transparent border border-white text-white lg:py-3 lg:px-5 px-3 py-2 hover:bg-green-600 hover:text-white rounded-lg">
-            Learn More
-          </button>
-          <button className="lg:text-md md:text-sm text-xs bg-transparent border border-white text-white lg:py-3 lg:px-5 px-3 py-2 hover:bg-green-600 hover:text-white rounded-lg">
-            Contact Us
-          </button>
         </div>
 
         <div className="flex w-full bottom-0 absolute justify-between pr-5 lg:pr-10">
           <div className="relative flex items-center justify-center">
             <div
-              className="text-white absolute z-20 flex flex-col items-center rounded-full hover:bg-black hover:text-white py-5 px-4 lg:py-3 lg:px-5 cursor-pointer"
+              className="text-white absolute z-20 flex flex-col items-center rounded-full hover:bg-[#90C74B] hover:text-white py-5 px-4 lg:py-3 lg:px-5 cursor-pointer"
               onClick={() => (window.location.href = "/tenancy")}
             >
               <FiArrowUpRight className="text-2xl lg:text-5xl" />
@@ -158,7 +154,7 @@ const Home = () => {
             <h1 className="text-lg lg:text-4xl text-white text-right flex items-baseline">
               Pakistan's
               <div className="flex ml-1">
-                <span className="text-green-400 hollow-text3">1</span>
+                <span className="text-green-400 text-6xl md:text-8xl">1</span>
                 <span className="text-white hollow-text2 text-sm items-start justify-start">
                   st
                 </span>
@@ -166,47 +162,31 @@ const Home = () => {
               <br />
             </h1>
             <h1 className="text-md lg:text-4xl text-white text-right flex items-center">
-              Technology & Science Park
+              Science & Technology Park
             </h1>
           </div>
         </div>
       </div>
 
-      <div className="flex flex-row items-center justify-between">
-        <div className="lg:p-0 p-5">
-          <div className="flex flex-col lg:flex-row text-left lg:items-end lg:p-20 lg:pb-4">
-            <h1 className="text-2xl lg:text-4xl font-bold lg:text-left">
-              We Support Your{" "}
-            </h1>
-            <div className="lg:ml-3 text-3xl lg:text-5xl font-bold gradient-text text-green-400">
-              <Typewriter
-                options={{
-                  strings: [
-                    " Startup Growth",
-                    " Business Innovation",
-                    " AgriTech Business",
-                    " AutoTech Business",
-                    " DefTech Business",
-                    " EdTech Business",
-                    " EnergyTech Business",
-                    " FinTech Business",
-                    " HealthTech Business",
-                    " SmartTech Business",
-                  ],
-                  autoStart: true,
-                  loop: true,
-                  deleteSpeed: 50,
-                  delay: 50,
-                  pauseFor: 2000,
-                }}
-              />
-            </div>
-          </div>
-          <h1 className="text-2xl lg:text-5xl font-bold lg:p-20 lg:pt-0 tracking-tighter">
+      <div className="flex flex-col lg:flex-row items-center justify-center p-10 pr-0 lg:p-20 lg:pr-0 lg:pb-0 lg:pt-0">
+        <div className="lg:p-0 pr-10">
+          <h1 className="text-2xl lg:text-5xl font-bold  tracking-tighter">
             Journey From Zero To One
           </h1>
+
+            <h1 className="text-md lg:text-xl lg:text-left mt-5 text-justify">
+              Founded by Pakistan's premier science and technology university,
+              NUST, NSTP cultivates a vibrant ecosystem that supports startups
+              and fosters advanced R&D and innovation for global entities. The
+              Park is a hub for cutting-edge tech-based companies.
+            </h1>
+
+            <button className="bg-white text-black p-2 px-3 lg:px-10 mt-5 border-2 border-black w-full lg:w-auto" onClick={() => window.location.href = "/about"}>
+              About Us
+            </button>
+    
         </div>
-        <img src={decor} alt="decor" className="lg:w-1/4 lg:block hidden" />
+        <img src={decor} alt="decor" className="lg:w-1/4 lg:block" />
       </div>
       <Statistics />
       <Service />

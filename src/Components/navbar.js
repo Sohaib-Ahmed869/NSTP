@@ -53,10 +53,9 @@ const Navbar = () => {
 
   return (
     <div
-      className={`z-50 bg-black text-white p-4 lg:p-6 rounded-3xl mt-5 mb-5 border-2 border-gray-300 flex justify-between items-center fixed ${
+      className={`z-50 bg-black text-white p-4 lg:p-6 flex justify-between items-center fixed w-full ${
         isScrolling ? "bg-opacity-80" : "bg-opacity-100"
       }`}
-      style={{ width: "95%" }} // Adjust height as needed
     >
       <div className="flex space-x-3 items-center">
         <img src={nstplogo} alt="nstp" className="w-8 lg:w-12" />
@@ -83,7 +82,7 @@ const Navbar = () => {
                   }`}
                   onClick={() => handleClick("/")}
                 >
-                  Home
+                  HOME
                 </a>
                 <a
                   className={`cursor-pointer ${
@@ -93,7 +92,7 @@ const Navbar = () => {
                   }`}
                   onClick={() => handleClick("/about")}
                 >
-                  About
+                  ABOUT
                 </a>
                 <a
                   className={`cursor-pointer ${
@@ -103,7 +102,7 @@ const Navbar = () => {
                   }`}
                   onClick={() => handleClick("/innovate")}
                 >
-                  Innovate Pakistan
+                  INNOVATE PAKISTAN
                 </a>
                 <a
                   href="#"
@@ -114,7 +113,7 @@ const Navbar = () => {
                   }`}
                   onClick={() => handleClick("/sectors")}
                 >
-                  Sectors
+                  SECTORS
                 </a>
                 <a
                   className={`cursor-pointer ${
@@ -124,7 +123,7 @@ const Navbar = () => {
                   }`}
                   onClick={() => handleClick("/events")}
                 >
-                  Events
+                  EVENTS
                 </a>
                 <a
                   className={`cursor-pointer ${
@@ -134,7 +133,7 @@ const Navbar = () => {
                   }`}
                   onClick={() => handleClick("/partnerships")}
                 >
-                  Associations & Partnerships
+                  ASSOCIATIONS & PARTNERSHIPS
                 </a>
                 <a
                   className={`cursor-pointer ${
@@ -144,7 +143,7 @@ const Navbar = () => {
                   }`}
                   onClick={() => handleClick("/mentors")}
                 >
-                  Mentors
+                  MENTORS
                 </a>
                 <a
                   className={`cursor-pointer ${
@@ -154,7 +153,7 @@ const Navbar = () => {
                   }`}
                   onClick={() => handleClick("/tenants")}
                 >
-                  Tenants
+                  TENANTS
                 </a>
                 <a
                   className={`cursor-pointer ${
@@ -164,20 +163,20 @@ const Navbar = () => {
                   }`}
                   onClick={() => handleClick("/contact")}
                 >
-                  Contact
+                  CONTACT
                 </a>
                 <a
                   className="hover:text-gray-800 bg-green-500 text-black font-bold px-4 py-1 rounded-full cursor-pointer"
                   onClick={() => handleClick("/tenancy")}
                 >
-                  Pitch us
+                  PITCH US
                 </a>
               </div>
             </div>
           )}
         </div>
       ) : (
-        <div className="flex space-x-5 items-center">
+        <div className="flex space-x-5 items-center text-sm font-bold">
           <a
             href="#"
             className={`cursor-pointer ${
@@ -185,7 +184,7 @@ const Navbar = () => {
             }`}
             onClick={() => handleClick("/")}
           >
-            Home
+            HOME
           </a>
           <a
             className={`cursor-pointer ${
@@ -193,7 +192,7 @@ const Navbar = () => {
             }`}
             onClick={() => handleClick("/about")}
           >
-            About
+            ABOUT
           </a>
           <a
             className={`cursor-pointer ${
@@ -203,7 +202,7 @@ const Navbar = () => {
             }`}
             onClick={() => handleClick("/innovate")}
           >
-            Innovate Pakistan
+            INNOVATE PAKISTAN
           </a>
           <a
             href="#"
@@ -214,7 +213,7 @@ const Navbar = () => {
             }`}
             onClick={() => handleClick("/sectors")}
           >
-            Sectors
+            SECTORS
           </a>
           <a
             className={`cursor-pointer ${
@@ -222,7 +221,7 @@ const Navbar = () => {
             }`}
             onClick={() => handleClick("/events")}
           >
-            Events
+            EVENTS
           </a>
           <a
             className={`cursor-pointer ${
@@ -232,7 +231,7 @@ const Navbar = () => {
             }`}
             onClick={() => handleClick("/partnerships")}
           >
-            Associations & Partnerships
+            ASSOCIATIONS & PARTNERSHIPS
           </a>
           <a
             className={`cursor-pointer ${
@@ -242,7 +241,7 @@ const Navbar = () => {
             }`}
             onClick={() => handleClick("/mentors")}
           >
-            Mentors
+            MENTORS
           </a>
           <a
             className={`cursor-pointer ${
@@ -252,7 +251,7 @@ const Navbar = () => {
             }`}
             onClick={() => handleClick("/tenants")}
           >
-            Tenants
+            TENANTS
           </a>
           <a
             className={`cursor-pointer ${
@@ -262,13 +261,13 @@ const Navbar = () => {
             }`}
             onClick={() => handleClick("/contact")}
           >
-            Contact
+            CONTACT
           </a>
           <a
             className="hover:text-gray-800 bg-green-500 text-black font-bold px-4 py-1 rounded-full cursor-pointer"
             onClick={() => handleClick("/tenancy")}
           >
-            Pitch us
+            PITCH US
           </a>
         </div>
       )}
