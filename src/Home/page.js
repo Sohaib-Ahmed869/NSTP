@@ -1,6 +1,9 @@
 import React from "react";
 import Service from "./Services/service";
 import Statistics from "./Stats/stats";
+import Gallery from "./Gallery/gallery";
+import Companies from "./Companies/companies";
+import Partners from "./Partners/partner";
 
 import pitchus from "../Assets/preview.png";
 import { FiArrowUpRight } from "react-icons/fi";
@@ -14,6 +17,9 @@ import decor from "../Assets/robo-arm.png";
 import { BiCalendar, BiWorld } from "react-icons/bi";
 import { FaSchool, FaSeedling, FaUserFriends } from "react-icons/fa";
 import { PiPerson } from "react-icons/pi";
+
+
+
 
 import Footer from "../Components/footer";
 
@@ -168,6 +174,8 @@ const Home = () => {
         </div>
       </div>
 
+      <NSTPAbout />
+      <Statistics />
       <div className="flex flex-col lg:flex-row items-center justify-center p-10 pr-0 lg:p-20 lg:pr-0 lg:pb-0 lg:pt-0">
         <div className="lg:p-0 pr-10">
           <h1 className="text-2xl lg:text-5xl font-bold  tracking-tighter">
@@ -188,10 +196,15 @@ const Home = () => {
         </div>
         <img src={decor} alt="decor" className="lg:w-1/4 lg:block" />
       </div>
-      <Statistics />
       <Service />
-      <NSTPAbout />
+      <h1 className="text-2xl lg:text-5xl font-bold text-center mt-10">
+        Highlights
+      </h1>
+      <Gallery />
+      <Companies />
+      <Partners />
       <Footer />
+
     </div>
   );
 };
