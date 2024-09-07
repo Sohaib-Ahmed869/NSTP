@@ -19,7 +19,7 @@ const Partners = () => {
               please get in touch.
             </p>
             <button
-              className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mt-5"
+              className="bg-green-500 hover:bg-green-700 text-white text-sm py-2 px-4 rounded-lg mt-5"
               onClick={() => (window.location.href = "/partnerships")}
             >
               Read More

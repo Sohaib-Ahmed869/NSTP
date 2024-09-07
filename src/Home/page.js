@@ -18,9 +18,7 @@ import decor from "../Assets/robo-arm.png";
 import { BiCalendar, BiWorld } from "react-icons/bi";
 import { FaSchool, FaSeedling, FaUserFriends } from "react-icons/fa";
 import { PiPerson } from "react-icons/pi";
-
-
-
+import { FaCameraRetro } from "react-icons/fa";
 
 import Footer from "../Components/footer";
 
@@ -183,30 +181,62 @@ const Home = () => {
             Journey From Zero To One
           </h1>
 
-            <h1 className="text-md lg:text-xl lg:text-left mt-5 text-justify">
-              Founded by Pakistan's premier science and technology university,
-              NUST, NSTP cultivates a vibrant ecosystem that supports startups
-              and fosters advanced R&D and innovation for global entities. The
-              Park is a hub for cutting-edge tech-based companies.
-            </h1>
+          <h1 className="text-md lg:text-xl lg:text-left mt-5 text-justify">
+            Founded by Pakistan's premier science and technology university,
+            NUST, NSTP cultivates a vibrant ecosystem that supports startups and
+            fosters advanced R&D and innovation for global entities. The Park is
+            a hub for cutting-edge tech-based companies.
+          </h1>
 
-            <button className="bg-white text-black p-2 px-3 lg:px-10 mt-5 border-2 border-black w-full lg:w-auto" onClick={() => window.location.href = "/about"}>
-              About Us
-            </button>
-    
+          <button
+            className="bg-white text-black p-2 px-3 lg:px-10 mt-5 border-2 border-black w-full lg:w-auto"
+            onClick={() => (window.location.href = "/about")}
+          >
+            About Us
+          </button>
         </div>
         <img src={decor} alt="decor" className="lg:w-1/4 lg:block" />
       </div>
       <Service />
-      <h1 className="text-2xl lg:text-5xl font-bold text-center mt-10">
-        Highlights
-      </h1>
+      <div className="flex flex-col items-center justify-center p-20 pb-0">
+        <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 lg:text-3xl flex items-center justify-center gap-5">
+          <FaCameraRetro className="text-black text-4xl lg:text-5xl" />
+          Highlights
+        </h1>
+      </div>
       <Gallery />
       <Partners />
+      <div className="flex flex-col items-center justify-center p-10 pt-0 pb-0">
+        <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 lg:text-3xl">
+          Companies at NSTP
+        </h1>
+      </div>
       <Companies />
+      <div className="flex flex-col items-center justify-center p-10 pt-0 pb-0">
+        <a
+          href="#"
+          className="inline-flex items-center justify-center px-5 py-3 text-sm font-small text-center text-white bg-green-500 rounded-lg focus:outline-none hover:bg-green-700 focus:z-10 focus:ring-4 focus:ring-blue-300" 
+        >
+          View All Companies
+          <svg
+            className="w-3.5 h-3.5 ms-2 rtl:rotate-180"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 14 10"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 5h12m0 0L9 1m4 4L9 9"
+            />
+          </svg>
+        </a>
+      </div>
       <CTA />
       <Footer />
-
     </div>
   );
 };
