@@ -4,6 +4,7 @@ import Statistics from "./Stats/stats";
 import Gallery from "./Gallery/gallery";
 import Companies from "./Companies/companies";
 import Partners from "./Partners/partner";
+import CTA from "./CTA/page";
 
 import pitchus from "../Assets/preview.png";
 import { FiArrowUpRight } from "react-icons/fi";
@@ -201,8 +202,9 @@ const Home = () => {
         Highlights
       </h1>
       <Gallery />
-      <Companies />
       <Partners />
+      <Companies />
+      <CTA />
       <Footer />
 
     </div>

@@ -16,7 +16,7 @@ const contactInfo = {
 
 const Footer = () => {
   return (
-    <div className="flex flex-col lg:flex-row items-center justify-between p-3 bg-black w-full">
+    <div className="flex flex-col lg:flex-row justify-center items-center p-3 bg-black w-full">
       <div className="w-full lg:w-auto p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-6">
