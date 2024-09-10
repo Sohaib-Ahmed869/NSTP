@@ -59,7 +59,7 @@ const NSTPStats = [
 
 const NSTPAbout = () => {
   return (
-    <div className="p-6 lg:p-32 lg:pt-40 lg:h-screen">
+    <div className="p-6 lg:p-32 lg:pt-40 lg:min-h-screen">
       <div className="flex flex-col lg:flex-row lg:justify-between items-center gap-10 lg:gap-20">
         <img
           src={nstplogocolored}
