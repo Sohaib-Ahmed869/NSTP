@@ -33,32 +33,32 @@ SwiperCore.use([Pagination, Mousewheel]);
 
 const stats = [
   {
-    icon: <PiMapPinSimpleAreaBold size={50} />,
+    icon: <PiMapPinSimpleAreaBold />,
     title: "Area",
     value: "796,100 km²",
   },
   {
-    icon: <IoPeopleSharp size={50} />,
+    icon: <IoPeopleSharp />,
     title: "Population",
     value: "243 Million",
   },
   {
-    icon: <FaLaptopCode size={50} />,
+    icon: <FaLaptopCode />,
     title: "4th Largest Freelancer Community",
     value: "3 Million+",
   },
   {
-    icon: <MdScience size={50} />,
+    icon: <MdScience />,
     title: "Scientists & Engineers",
     value: "2 Million+",
   },
   {
-    icon: <MdOutlineEmojiPeople size={50} />,
+    icon: <MdOutlineEmojiPeople />,
     title: "Youth",
     value: "64% of the Population",
   },
   {
-    icon: <FaCity size={50} />,
+    icon: <FaCity />,
     title: "Capital",
     value: "Islamabad",
   },
@@ -66,32 +66,32 @@ const stats = [
 
 const IslamabadStats = [
   {
-    icon: <PiMapPinSimpleAreaBold size={50} />,
+    icon: <PiMapPinSimpleAreaBold />,
     title: "Area",
     value: "906 km²",
   },
   {
-    icon: <IoPeopleSharp size={50} />,
+    icon: <IoPeopleSharp />,
     title: "Population",
     value: "2,363,863 ",
   },
   {
-    icon: <FaSchool size={50} />,
+    icon: <FaSchool />,
     title: "Educational Institutions",
     value: "1,000+",
   },
   {
-    icon: <BiBook size={50} />,
+    icon: <BiBook />,
     title: "Literacy Rate",
     value: "98%",
   },
   {
-    icon: <MdOutlineEmojiPeople size={50} />,
+    icon: <MdOutlineEmojiPeople />,
     title: "Businesses",
     value: "Ranked as best business city in Pakistan",
   },
   {
-    icon: <TiWeatherCloudy size={50} />,
+    icon: <TiWeatherCloudy />,
     title: "Weather",
     value: "City with Exceptional Climate",
   },
@@ -99,32 +99,32 @@ const IslamabadStats = [
 
 const NustStats = [
   {
-    icon: <BiCalendar size={50} />,
+    icon: <BiCalendar />,
     title: "3 Decades of Excellence",
     value: "Founded in 1991",
   },
   {
-    icon: <FaSchool size={50} />,
+    icon: <FaSchool />,
     title: "Educational Institutions",
     value: "20",
   },
   {
-    icon: <FaCity size={50} />,
+    icon: <FaCity />,
     title: "Campuses",
     value: "07",
   },
   {
-    icon: <GiGraduateCap size={50} />,
+    icon: <GiGraduateCap />,
     title: "Academic Programs",
     value: "159",
   },
   {
-    icon: <GrCertificate size={50} />,
+    icon: <GrCertificate />,
     title: "Degrees Awarded",
     value: "55,641",
   },
   {
-    icon: <FaClipboardList size={50} />,
+    icon: <FaClipboardList />,
     title: "Disciplines",
     value: "07",
   },
@@ -132,32 +132,32 @@ const NustStats = [
 
 const NSTPStats = [
   {
-    icon: <BiCalendar size={50} />,
+    icon: <BiCalendar />,
     title: "Oct 2020",
     value: "Established",
   },
   {
-    icon: <FaSchool size={50} />,
+    icon: <FaSchool />,
     title: "100+",
     value: "Hi-Tech Companies",
   },
   {
-    icon: <FaSeedling size={50} />,
+    icon: <FaSeedling />,
     title: "64",
     value: "Startups",
   },
   {
-    icon: <BiWorld size={50} />,
+    icon: <BiWorld />,
     title: "15+",
     value: "International Firms",
   },
   {
-    icon: <PiPerson size={50} />,
+    icon: <PiPerson />,
     title: "6000+",
     value: "Hi-Tech Jobs Created",
   },
   {
-    icon: <FaUserFriends size={50} />,
+    icon: <FaUserFriends />,
     title: "2000+",
     value: "Internships Provided",
   },
@@ -166,11 +166,11 @@ const NSTPStats = [
 const PakistanAbout = () => {
   return (
     <div>
-      <div className="flex flex-row justify-between items-center lg:gap-20">
+      <div className="flex flex-row justify-between items-center lg:gap-20 md:gap-10">
         <img
           src={pakmap}
           alt="Pakistan Map"
-          className="hidden lg:block lg:w-1/4"
+          className="hidden lg:block lg:w-1/4 md:block md:w-1/4"
         ></img>
         <div className="lg:w-3/4">
           <h1 className="mb-4 text-xl lg:text-3xl font-extrabold leading-none tracking-tight text-gray-900">
@@ -196,12 +196,18 @@ const PakistanAbout = () => {
         </div>
       </div>
       {
-        <div className=" hidden lg:flex lg:flex-row justify-between gap-20 mt-20">
+        <div className=" hidden md:flex md:gap-5 lg:flex lg:flex-row justify-between gap-20 mt-20">
           {stats.map((stat) => (
             <div className="flex flex-col items-center">
-              <div className="rounded-full p-4 bg-[#d6f8cb]">{stat.icon}</div>
-              <h2 className="text-lg font-bold mt-4">{stat.title}</h2>
-              <p className="text-md font-normal text-gray-500">{stat.value}</p>
+              <div className="rounded-full p-4 bg-[#d6f8cb] md:text-2xl lg:text-4xl">
+                {stat.icon}
+              </div>
+              <h2 className="text-lg font-bold mt-4 md:text-sm lg:text-lg">
+                {stat.title}
+              </h2>
+              <p className="text-md lg:text-md font-normal text-gray-500 md:text-sm">
+                {stat.value}
+              </p>
             </div>
           ))}
         </div>
@@ -274,16 +280,22 @@ const IslamabadAbout = () => {
         <img
           src={islamabadpng}
           alt="Pakistan Map"
-          className="hidden lg:block lg:w-1/4"
+          className="hidden lg:block lg:w-1/4 md:block md:w-1/4"
         ></img>
       </div>
       {
-        <div className=" hidden lg:flex lg:flex-row justify-between gap-20 mt-20">
+        <div className=" hidden md:flex lg:flex lg:flex-row justify-between gap-20 mt-20 md:mt-5">
           {IslamabadStats.map((stat) => (
             <div className="flex flex-col items-center">
-              <div className="rounded-full p-4 bg-[#d6f8cb]">{stat.icon}</div>
-              <h2 className="text-lg font-bold mt-4">{stat.title}</h2>
-              <p className="text-md font-normal text-gray-500">{stat.value}</p>
+              <div className="rounded-full p-4 bg-[#d6f8cb] md:text-2xl lg:text-4xl">
+                {stat.icon}
+              </div>
+              <h2 className="text-lg font-bold mt-4 md:text-sm lg:text-lg">
+                {stat.title}
+              </h2>
+              <p className="text-md lg:text-md font-normal text-gray-500 md:text-sm text-center">
+                {stat.value}
+              </p>
             </div>
           ))}
         </div>
@@ -334,7 +346,7 @@ const NustAbout = () => {
         <img
           src={nstppng}
           alt="Pakistan Map"
-          className="hidden lg:block lg:w-1/4"
+          className="hidden lg:block lg:w-1/4 md:block md:w-1/4"
         ></img>
         <div className="lg:w-3/4">
           <h1 className="mb-4 text-xl lg:text-3xl font-extrabold leading-none tracking-tight text-gray-900">
@@ -360,12 +372,18 @@ const NustAbout = () => {
         </div>
       </div>
       {
-        <div className=" hidden lg:flex lg:flex-row justify-between gap-20 mt-20">
+        <div className=" hidden md:flex lg:flex lg:flex-row justify-between gap-20 mt-20 md:mt-5">
           {NustStats.map((stat) => (
             <div className="flex flex-col items-center">
-              <div className="rounded-full p-4 bg-[#d6f8cb]">{stat.icon}</div>
-              <h2 className="text-lg font-bold mt-4">{stat.title}</h2>
-              <p className="text-md font-normal text-gray-500">{stat.value}</p>
+              <div className="rounded-full p-4 bg-[#d6f8cb] md:text-2xl lg:text-4xl">
+                {stat.icon}
+              </div>
+              <h2 className="text-lg font-bold mt-4 md:text-sm lg:text-lg text-center">
+                {stat.title}
+              </h2>
+              <p className="text-md lg:text-md font-normal text-gray-500 md:text-sm text-center">
+                {stat.value}
+              </p>
             </div>
           ))}
         </div>
@@ -434,17 +452,23 @@ const NSTPAbout = () => {
         <img
           src={nstplogocolored}
           alt="Pakistan Map"
-          className="hidden lg:block lg:w-1/5"
+          className="hidden lg:block lg:w-1/4 md:block md:w-1/4"
         ></img>
       </div>
       {
-        <div className=" hidden lg:flex lg:flex-row justify-between gap-20 mt-20">
+        <div className=" hidden md:flex lg:flex lg:flex-row justify-between gap-20 mt-20">
           {NSTPStats.map((stat) => (
-            <div className="flex flex-col items-center">
-              <div className="rounded-full p-4 bg-[#d6f8cb]">{stat.icon}</div>
-              <h2 className="text-lg font-bold mt-4">{stat.title}</h2>
-              <p className="text-md font-normal text-gray-500">{stat.value}</p>
-            </div>
+             <div className="flex flex-col items-center">
+             <div className="rounded-full p-4 bg-[#d6f8cb] md:text-2xl lg:text-4xl">
+               {stat.icon}
+             </div>
+             <h2 className="text-lg font-bold mt-4 md:text-sm lg:text-lg text-center">
+               {stat.title}
+             </h2>
+             <p className="text-md lg:text-md font-normal text-gray-500 md:text-sm text-center">
+               {stat.value}
+             </p>
+           </div>
           ))}
         </div>
       }
@@ -504,13 +528,13 @@ const About = () => {
   }, []);
   return (
     <div>
-      <div className="p-4 mt-36 lg:hidden">
+      <div className="p-4 mt-36 lg:hidden md:hidden">
         <PakistanAboutMobile />
         <IslamabadAboutMobile />
         <NustAboutMobile />
         <NSTPAboutMobile />
       </div>
-      <div className="p-4 lg:p-20 no-scrollbar overflow-y-hidden hidden lg:block">
+      <div className="p-4 lg:p-20 no-scrollbar overflow-y-hidden hidden lg:block md:block">
         <Swiper
           direction="vertical"
           slidesPerView={1}
@@ -519,7 +543,10 @@ const About = () => {
           style={{ height: "100vh" }}
         >
           <SwiperSlide>
-            <div id="hero" className="h-screen flex items-center">
+            <div
+              id="hero"
+              className="h-screen flex items-center md:min-h-screen"
+            >
               <PakistanAbout />
             </div>
           </SwiperSlide>

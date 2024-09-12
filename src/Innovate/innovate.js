@@ -67,8 +67,8 @@ const cardInfo = [
 const Innovate = () => {
   return (
     <div>
-      <div className="flex flex-col lg:flex-row justify-between items-center gap-20 lg:p-20 mt-28">
-        <div className="w-3/4">
+      <div className="flex flex-col lg:flex-row justify-between items-center gap-20 lg:p-20 mt-28 md:p-20 md:flex-row">
+        <div className="w-3/4 md:w-full">
           <h1 className="mb-10 text-xl lg:text-3xl font-extrabold leading-none tracking-tight text-gray-900">
             INNOVATE PAKISTAN -{" "}
             <span className="text-green-400">
@@ -98,7 +98,7 @@ const Innovate = () => {
             and entrepreneurs to develop and realise their true potential.
           </p>
         </div>
-        <img src={innovate} alt="Pakistan Map" className="lg:w-1/4  lg:rounded-3xl" />
+        <img src={innovate} alt="Pakistan Map" className="lg:w-1/4 md:hidden lg:rounded-3xl" />
       </div>
       <div className="bg-[#9CE37D] py-16 px-20">
         <h1 className="text-2xl font-bold mb-2">

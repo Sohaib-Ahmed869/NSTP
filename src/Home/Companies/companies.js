@@ -58,7 +58,7 @@ const companyNames = [
 const Companies = () => {
   return (
     <div className="lg:p-20 p-5">
-      <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 p-10 bg-gray-200 items-center rounded-md">
+      <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5 gap-10 p-10 bg-gray-200 items-center rounded-md">
         {companyNames.map((company, index) => (
           <div key={index} className="bg-white h-36 flex items-center w-full justify-center ">
             <img

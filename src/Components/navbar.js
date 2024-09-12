@@ -11,7 +11,7 @@ const Navbar = () => {
 
   useEffect(() => {
     setActiveLink(window.location.pathname);
-    if (window.innerWidth < 768) {
+    if (window.innerWidth < 1025) {
       setMobileView(true);
     }
 
@@ -31,7 +31,7 @@ const Navbar = () => {
 
     window.addEventListener("scroll", handleScroll);
     window.addEventListener("resize", () => {
-      setMobileView(window.innerWidth < 768);
+      setMobileView(window.innerWidth < 1025);
     });
 
     return () => {

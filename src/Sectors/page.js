@@ -125,12 +125,12 @@ const Sectors = () => {
   return (
     <div>
       <div className="mt-28 p-6 lg:p-20">
-        <div className="flex flex-col lg:flex-row justify-between items-center gapp-5 lg:gap-20">
+        <div className="flex flex-col lg:flex-row md:flex-row justify-between items-center gapp-5 lg:gap-20">
           {!mobileView && (
             <img
               src={sectors}
               alt="Pakistan Map"
-              className="w-3/4 lg:w-1/3 rounded-3xl"
+              className="w-3/4 lg:w-1/3 md:w-1/3 rounded-3xl"
             />
           )}
           <div className="lg:w-2/3">
@@ -146,11 +146,11 @@ const Sectors = () => {
                 <img
                   src={sectors}
                   alt="Pakistan Map"
-                  className="w-3/4 lg:w-1/3 rounded-3xl"
+                  className="w-3/4 lg:w-1/3 md:w-1/3 rounded-3xl"
                 />
               </div>
             )}
-            {!mobileView && <div className="gap-10 grid grid-cols-2 lg:grid-cols-3">
+            {!mobileView && <div className="gap-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
               {sectorsData.map((info) => (
                 <div className="flex flex-col items-center text-center lg:text-left lg:flex-row lg:items-center lg:justify-start gap-5">
                   <div>{info.icon}</div>

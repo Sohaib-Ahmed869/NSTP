@@ -59,12 +59,12 @@ const NSTPStats = [
 
 const NSTPAbout = () => {
   return (
-    <div className="p-6 lg:p-32 lg:pt-40 lg:min-h-screen">
-      <div className="flex flex-col lg:flex-row lg:justify-between items-center gap-10 lg:gap-20">
+    <div className="p-6 md:p-32 lg:pt:40 lg:p-32 lg:pt-40 md:min-h-screen lg:min-h-screen">
+      <div className="flex flex-col md:flex-row lg:flex-row md:justify-between lg:justify-between items-center gap-10 md:gap-20 lg:gap-20">
         <img
           src={nstplogocolored}
           alt="NSTP Logo"
-          className="w-2/5 lg:w-1/5"
+          className="w-2/5 lg:w-1/5 md:w-1/5"
         ></img>
         <div className="w-full lg:w-3/4">
           <h1 className="mb-4 text-xl lg:text-3xl font-extrabold leading-none tracking-tight text-gray-900">
@@ -73,7 +73,7 @@ const NSTPAbout = () => {
               PAKISTAN'S PREMIER TECHNOLOGY PARK FOR SCIENCE AND TECHNOLOGY
             </span>
           </h1>
-          <p className="text-md font-normal text-gray-500 mb-10 lg:leading-6 lg:text-justify">
+          <p className="text-md font-normal text-gray-500 mb-10 lg:leading-6 md:leading-6 md:text-justify lg:text-justify">
             National Science and Technology Park (NSTP) is a technology park
             located in Islamabad, Pakistan. The park is home to a number of
             high-tech companies, startups, and international firms. The park is
@@ -89,7 +89,7 @@ const NSTPAbout = () => {
         </div>
       </div>
       {
-        <div className="grid grid-cols-3 lg:grid-cols-6 mt-0 lg:mt-20 w-full">
+        <div className="grid grid-cols-3 lg:grid-cols-6 mt-0 lg:mt-20 w-full md:grid-cols-6 md:mt-20">
           {NSTPStats.map((stat) => (
             <div className="flex flex-col items-center mt-3">
               <div className="rounded-full p-2 lg:p-4 bg-[#d6f8cb]">
@@ -175,8 +175,8 @@ const Home = () => {
 
       <NSTPAbout />
       <Statistics />
-      <div className="flex flex-col lg:flex-row items-center justify-center p-10 pr-0 lg:p-20 lg:pr-0 lg:pb-0 lg:pt-0">
-        <div className="lg:p-0 pr-10">
+      <div className="flex flex-col md:flex-row lg:flex-row items-center justify-center p-10 pr-0 lg:p-20 lg:pr-0 lg:pb-0 lg:pt-0">
+        <div className="lg:p-0 pr-10 md:pr-0">
           <h1 className="text-2xl lg:text-5xl font-bold  tracking-tighter">
             Journey From Zero To One
           </h1>
@@ -195,7 +195,7 @@ const Home = () => {
             About Us
           </button>
         </div>
-        <img src={decor} alt="decor" className="lg:w-1/4 lg:block" />
+        <img src={decor} alt="decor" className="lg:w-1/4 lg:block md:w-1/4 md:block" />
       </div>
       <Service />
       <div className="flex flex-col items-center justify-center p-20 pb-0">

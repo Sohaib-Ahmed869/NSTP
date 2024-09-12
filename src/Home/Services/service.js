@@ -71,7 +71,7 @@ const Service = () => {
   };
 
   return (
-    <div className="lg:mt-48">
+    <div className="lg:mt-48 md:mt-28">
       <div className="hidden lg:block" style={containerStyle}></div>
       <div className="bg-black">
         <div className="lg:flex lg:flex-col items-center bg-black w-full relative top-0">

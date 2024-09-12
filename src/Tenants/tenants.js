@@ -77,7 +77,7 @@ const Tenants = () => {
                     className="w-20 h-20 rounded-full"
                   />
                   <div className="flex flex-col gap-1 lg:gap-3 ">
-                    <h1 className="text-lg lg:text-xl leading-none font-semibold lg:font-bold">
+                    <h1 className="text-lg lg:text-xl leading-none font-semibold lg:font-bold md:text-sm">
                       {tenant.name}
                     </h1>
                     <p className="leading-none">

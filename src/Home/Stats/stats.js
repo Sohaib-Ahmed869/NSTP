@@ -28,7 +28,7 @@ const Statistics = () => {
   };
 
   return (
-    <div className="bg-black text-white p-6 lg:p-20 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 mb-0 lg:mb-36">
+    <div className="bg-black text-white p-6 lg:p-20 grid grid-cols-2 md:grid-cols-6 lg:grid-cols-6 gap-8 mb-0 lg:mb-36">
       <div className="">
         <h2 className="hollow-text">
           ${convertNumber(stats.revenebyTenants)}

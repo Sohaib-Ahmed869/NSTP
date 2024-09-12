@@ -12,7 +12,7 @@ import image11 from "../../Assets/11.jpeg";
 
 const Gallery = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 p-20">
+    <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-3 gap-4 p-20">
       <div className="grid gap-2">
         <div>
           <img className="h-auto max-w-full rounded-lg" src={image1} alt="" />  
