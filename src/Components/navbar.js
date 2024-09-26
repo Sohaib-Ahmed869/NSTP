@@ -58,7 +58,7 @@ const Navbar = () => {
         isScrolling ? "bg-opacity-80" : "bg-opacity-100"
       }`}
     >
-      <div className="flex space-x-3 items-center">
+      <div className="flex space-x-3 items-center cursor-pointer" onClick={() => handleClick("/")}>
         <img src={nstplogo} alt="nstp" className="w-8 lg:w-12" />
         <h1 className="text-lg font-bold">NSTP</h1>
       </div>
@@ -74,7 +74,7 @@ const Navbar = () => {
           {isMenuOpen && (
             <div className="absolute top-14 right-4 bg-black p-5 rounded-xl border border-gray-300">
               <div className="flex flex-col space-y-3">
-                <a
+                {/* <a
                   href="#"
                   className={`cursor-pointer ${
                     activeLink === "/"
@@ -84,7 +84,7 @@ const Navbar = () => {
                   onClick={() => handleClick("/")}
                 >
                   HOME
-                </a>
+                </a> */}
                 <a
                   className={`cursor-pointer ${
                     activeLink === "/about"
@@ -178,7 +178,7 @@ const Navbar = () => {
         </div>
       ) : (
         <div className="flex space-x-5 items-center text-sm font-bold">
-          <a
+          {/* <a
             href="#"
             className={`cursor-pointer ${
               activeLink === "/" ? "text-green-500" : "hover:text-green-500"
@@ -186,7 +186,7 @@ const Navbar = () => {
             onClick={() => handleClick("/")}
           >
             HOME
-          </a>
+          </a> */}
           <a
             className={`cursor-pointer ${
               activeLink === "/about" ? "text-green-500" : "hover:text-green-500"
