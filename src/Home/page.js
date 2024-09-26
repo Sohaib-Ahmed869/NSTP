@@ -189,7 +189,7 @@ const Home = () => {
           </h1>
 
           <button
-            className="bg-white text-black p-2 px-3 lg:px-10 mt-5 border-2 border-black w-full lg:w-auto"
+            className="bg-white text-black p-2 px-3 lg:px-10 mt-5 border-2 border-black w-auto sm:w-full md:w-auto lg:w-auto"
             onClick={() => (window.location.href = "/about")}
           >
             About Us

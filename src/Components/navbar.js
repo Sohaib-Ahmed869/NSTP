@@ -34,6 +34,7 @@ const Navbar = () => {
       setMobileView(window.innerWidth < 1025);
     });
 
+    
     return () => {
       window.removeEventListener("scroll", handleScroll);
       window.removeEventListener("resize", () => {});
