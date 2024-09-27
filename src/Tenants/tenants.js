@@ -28,13 +28,13 @@ const Tenants = () => {
     <div className="p-6 lg:p-20 mt-28">
       <h1 className="mb-5 lg:mb-10 text-2xl lg:text-3xl font-extrabold leading-none tracking-tight text-gray-900 lg:text-center flex lg:flex-row flex-col lg:gap-4">
         <img src={nstp} alt="nstp" className="w-12" />
-        <span className="text-green-400 lg:mt-1">NSTP</span>
+        <span className="text-primary lg:mt-1">NSTP</span>
         <span className="lg:mt-1"> IS HOME TO</span>{" "}
-        <span className="text-green-400 lg:mt-1">OVER 80 COMPANIES</span>{" "}
+        <span className="text-primary lg:mt-1">OVER 80 COMPANIES</span>{" "}
       </h1>
       <button
         className={`bg-black text-white p-2 px-3 lg:px-10 rounded-lg mr-1 lg:mr-5 ${
-          activeFloor === "All" ? "bg-[#4ade80]" : "hover:bg-[#4ade80]"
+          activeFloor === "All" ? "bg-primary" : "hover:bg-primary"
         }`}
         onClick={() => setActiveFloor("All")}
       >
@@ -46,7 +46,7 @@ const Tenants = () => {
           <button
             key={floor}
             className={`bg-black text-white p-2 px-3 lg:px-10 rounded-lg mr-1 lg:mr-5 ${
-              activeFloor === floor ? "bg-[#4ade80]" : "hover:bg-[#4ade80]"
+              activeFloor === floor ? "bg-primary" : "hover:bg-primary"
             }`}
             onClick={() => setActiveFloor(floor)}
           >
@@ -60,7 +60,7 @@ const Tenants = () => {
             <div
               className="flex items-center w-full mb-5 rounded-xl lg:rounded-2xl p-2 lg:p-7 justify-end"
               style={{
-                background: "linear-gradient(to right, #a7f3d0, #4ade80)",
+                background: "linear-gradient(to right, #a7f3d0, #90C74B)",
               }}
             >
               <h2 className="text-2xl ml-10 mb-0 hollow-text4">{wing}</h2>
@@ -89,7 +89,7 @@ const Tenants = () => {
                         href={tenant.website}
                         target="_blank"
                         rel="noreferrer"
-                        className="text-sm text-green-500 underline"
+                        className="text-sm text-primary underline"
                       >
                         Visit Website {">"}
                       </a>

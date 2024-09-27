@@ -124,7 +124,7 @@ const Events = () => {
       <h1 className="mb-5 lg:mb-10 flex flex-col lg:flex-row text-2xl lg:text-3xl font-extrabold leading-none tracking-tight text-gray-900 text-center flex items-start lg:items-center lg:justify-center lg:gap-2">
         <BiCalendar size={40} className="inline-block" />
         UPCOMING EVENTS AT{" "}
-        <span className="text-green-400 text-left">
+        <span className="text-primary text-left">
           NATIONAL SCIENCE & TECHNOLOGY PARK (NSTP)
         </span>{" "}
       </h1>
@@ -158,7 +158,7 @@ const Events = () => {
                         {event.time}
                       </p>
                     </div>
-                    <button className="text-black py-2 px-4 rounded-2xl bg-green-400 flex items-center gap-1 hover:bg-green-600 hover:text-white transition duration-500">
+                    <button className="text-black py-2 px-4 rounded-2xl bg-primary flex items-center gap-1 hover:bg-green-600 hover:text-white transition duration-500">
                       Learn More <FaArrowRightLong size={14} />
                     </button>
                   </div>

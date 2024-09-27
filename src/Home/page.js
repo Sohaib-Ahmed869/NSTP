@@ -69,7 +69,7 @@ const NSTPAbout = () => {
         <div className="w-full lg:w-3/4">
           <h1 className="mb-4 text-xl lg:text-3xl font-extrabold leading-none tracking-tight text-gray-900">
             NATIONAL SCIENCE AND TECHNOLOGY PARK -{" "}
-            <span className="text-green-400">
+            <span className="text-primary">
               PAKISTAN'S PREMIER TECHNOLOGY PARK FOR SCIENCE AND TECHNOLOGY
             </span>
           </h1>
@@ -125,7 +125,7 @@ const Home = () => {
       >
         <div className="flex items-center lg:p-10 px-5 pt-10 pb-2 mt-28">
           <div>
-            <p className="text-5xl text-white text-left mt-5 font-bold slide-left hollow-text">
+            <p className="text-5xl text-white text-left mt-5 font-bold slide-left hollow-text-main">
               NATIONAL SCIENCE & TECHNOLOGY PARK
             </p>
             {/* <p className="text-2xl text-white text-left slide-left">
@@ -159,7 +159,7 @@ const Home = () => {
             <h1 className="text-lg lg:text-4xl text-white text-right flex items-baseline">
               Pakistan's
               <div className="flex ml-1">
-                <span className="text-green-400 text-6xl md:text-8xl">1</span>
+                <span className="text-primary text-6xl md:text-8xl">1</span>
                 <span className="text-white hollow-text2 text-sm items-start justify-start">
                   st
                 </span>
@@ -195,7 +195,11 @@ const Home = () => {
             About Us
           </button>
         </div>
-        <img src={decor} alt="decor" className="lg:w-1/4 lg:block md:w-1/4 md:block" />
+        <img
+          src={decor}
+          alt="decor"
+          className="lg:w-1/4 lg:block md:w-1/4 md:block"
+        />
       </div>
       <Service />
       <div className="flex flex-col items-center justify-center p-20 pb-0">
@@ -215,7 +219,7 @@ const Home = () => {
       <div className="flex flex-col items-center justify-center p-10 pt-0 pb-0">
         <a
           href="#"
-          className="inline-flex items-center justify-center px-5 py-3 text-sm font-small text-center text-white bg-green-500 rounded-lg focus:outline-none hover:bg-green-700 focus:z-10 focus:ring-4 focus:ring-blue-300" 
+          className="inline-flex items-center justify-center px-5 py-3 text-sm font-small text-center text-white bg-primary rounded-lg focus:outline-none hover:bg-green-700 focus:z-10 focus:ring-4 focus:ring-blue-300"
         >
           View All Companies
           <svg

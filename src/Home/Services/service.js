@@ -82,7 +82,7 @@ const Service = () => {
           />
         </div>
         <div className="flex flex-col items-center bg-black w-full lg:mt-36">
-          <p className="text-sm lg:text-xl italic text-green-300 text-center mt-10 mb-10">
+          <p className="text-sm lg:text-xl italic text-primary text-center mt-10 mb-10">
             Ready to power your business? <br></br> NSTP offers a range of
             services to help you innovate and grow.
           </p>
@@ -93,7 +93,7 @@ const Service = () => {
                 return (
                   <div key={service.id} className="p-3">
                     <div className="flex items-center space-x-3">
-                      <p className="text-2xl text-green-400">{service.icon}</p>
+                      <p className="text-2xl text-primary">{service.icon}</p>
                       <h2 className="text-lg lg:text-2xl font-semibold text-black-600">
                         {service.title}
                       </h2>

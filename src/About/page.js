@@ -175,7 +175,7 @@ const PakistanAbout = () => {
         <div className="lg:w-3/4">
           <h1 className="mb-4 text-xl lg:text-3xl font-extrabold leading-none tracking-tight text-gray-900">
             PAKISTAN -{" "}
-            <span className="text-green-400">
+            <span className="text-primary">
               THE GLOBAL DESTINATION FOR LOVERS OF{" "}
             </span>{" "}
             NATURE, FOOD, HISTORY & HOSPITALITY
@@ -224,7 +224,7 @@ const PakistanAboutMobile = () => {
         <div className="lg:w-3/4">
           <h1 className="mb-4 text-xl lg:text-3xl font-extrabold leading-none tracking-tight text-gray-900">
             PAKISTAN -{" "}
-            <span className="text-green-400">
+            <span className="text-primary">
               THE GLOBAL DESTINATION FOR LOVERS OF{" "}
             </span>{" "}
             NATURE, FOOD, HISTORY & HOSPITALITY
@@ -255,7 +255,7 @@ const IslamabadAbout = () => {
         <div className="lg:w-3/4">
           <h1 className="mb-4 text-xl lg:text-3xl font-extrabold leading-none tracking-tight text-gray-900">
             ISLAMABAD -{" "}
-            <span className="text-green-400">
+            <span className="text-primary">
               PAKISTAN'S PREMIER LOCATION FOR{" "}
             </span>{" "}
             INNOVATIVE TECHNOLOGY-DRIVEN ENTERPRISES
@@ -312,7 +312,7 @@ const IslamabadAboutMobile = () => {
         <div className="lg:w-3/4">
           <h1 className="mb-4 text-xl lg:text-3xl font-extrabold leading-none tracking-tight text-gray-900">
             ISLAMABAD -{" "}
-            <span className="text-green-400">
+            <span className="text-primary">
               PAKISTAN'S PREMIER LOCATION FOR{" "}
             </span>{" "}
             INNOVATIVE TECHNOLOGY-DRIVEN ENTERPRISES
@@ -351,7 +351,7 @@ const NustAbout = () => {
         <div className="lg:w-3/4">
           <h1 className="mb-4 text-xl lg:text-3xl font-extrabold leading-none tracking-tight text-gray-900">
             NATIONAL UNIVERSITY OF SCIENCES AND TECHNOLOGY -{" "}
-            <span className="text-green-400">
+            <span className="text-primary">
               PAKISTAN'S PREMIER UNIVERSITY FOR SCIENCE AND TECHNOLOGY
             </span>
           </h1>
@@ -400,7 +400,7 @@ const NustAboutMobile = () => {
         <div className="lg:w-3/4">
           <h1 className="mb-4 text-xl lg:text-3xl font-extrabold leading-none tracking-tight text-gray-900">
             NATIONAL UNIVERSITY OF SCIENCES AND TECHNOLOGY -{" "}
-            <span className="text-green-400">
+            <span className="text-primary">
               PAKISTAN'S PREMIER UNIVERSITY FOR SCIENCE AND TECHNOLOGY
             </span>
           </h1>
@@ -431,7 +431,7 @@ const NSTPAbout = () => {
         <div className="lg:w-3/4">
           <h1 className="mb-4 text-xl lg:text-3xl font-extrabold leading-none tracking-tight text-gray-900">
             NATIONAL SCIENCE AND TECHNOLOGY PARK -{" "}
-            <span className="text-green-400">
+            <span className="text-primary">
               PAKISTAN'S PREMIER TECHNOLOGY PARK FOR SCIENCE AND TECHNOLOGY
             </span>
           </h1>
@@ -488,7 +488,7 @@ const NSTPAboutMobile = () => {
         <div className="lg:w-3/4">
           <h1 className="mb-4 text-xl lg:text-3xl font-extrabold leading-none tracking-tight text-gray-900">
             NATIONAL SCIENCE AND TECHNOLOGY PARK -{" "}
-            <span className="text-green-400">
+            <span className="text-primary">
               PAKISTAN'S PREMIER TECHNOLOGY PARK FOR SCIENCE AND TECHNOLOGY
             </span>
           </h1>

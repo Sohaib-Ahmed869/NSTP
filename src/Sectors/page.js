@@ -136,7 +136,7 @@ const Sectors = () => {
           <div className="lg:w-2/3">
             <h1 className="mb-5 lg:mb-10 text-2xl lg:text-3xl font-extrabold leading-none tracking-tight text-gray-900">
               SECTORS AT NSTP -{" "}
-              <span className="text-green-400">
+              <span className="text-primary">
                 INNOVATION, ENTREPRENEURSHIP, AND TECHNOLOGY
               </span>{" "}
               NATIONWIDE
@@ -215,7 +215,7 @@ const Sectors = () => {
                   <h1 className="text-2xl font-bold">{sector.name}</h1>
                 </div>
                 <p className="text-sm lg:texl-md text-gray-700 mb-12">{sector.description}</p>
-                <button className="text-black py-2 px-4 rounded-2xl bg-green-400 flex items-center gap-1 hover:bg-green-600 hover:text-white transition duration-500 absolute bottom-5">
+                <button className="text-black py-2 px-4 rounded-2xl bg-primary flex items-center gap-1 hover:bg-green-600 hover:text-white transition duration-500 absolute bottom-5">
                   Learn More <FaArrowRight size={14} />
                 </button>
               </div>

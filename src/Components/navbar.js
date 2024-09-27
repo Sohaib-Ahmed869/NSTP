@@ -78,8 +78,8 @@ const Navbar = () => {
                   href="#"
                   className={`cursor-pointer ${
                     activeLink === "/"
-                      ? "text-green-500"
-                      : "hover:text-green-500"
+                      ? "text-primary"
+                      : "hover:text-primary"
                   }`}
                   onClick={() => handleClick("/")}
                 >
@@ -88,29 +88,29 @@ const Navbar = () => {
                 <a
                   className={`cursor-pointer ${
                     activeLink === "/about"
-                      ? "text-green-500"
-                      : "hover:text-green-500"
+                      ? "text-primary"
+                      : "hover:text-primary"
                   }`}
                   onClick={() => handleClick("/about")}
                 >
                   ABOUT
                 </a>
-                <a
+                {/* <a
                   className={`cursor-pointer ${
                     activeLink === "/innovate"
-                      ? "text-green-500"
-                      : "hover:text-green-500"
+                      ? "text-primary"
+                      : "hover:text-primary"
                   }`}
                   onClick={() => handleClick("/innovate")}
                 >
                   INNOVATE PAKISTAN
-                </a>
+                </a> */}
                 <a
                   href="#"
                   className={`cursor-pointer ${
                     activeLink === "/sectors"
-                      ? "text-green-500"
-                      : "hover:text-green-500"
+                      ? "text-primary"
+                      : "hover:text-primary"
                   }`}
                   onClick={() => handleClick("/sectors")}
                 >
@@ -119,8 +119,8 @@ const Navbar = () => {
                 <a
                   className={`cursor-pointer ${
                     activeLink === "/events"
-                      ? "text-green-500"
-                      : "hover:text-green-500"
+                      ? "text-primary"
+                      : "hover:text-primary"
                   }`}
                   onClick={() => handleClick("/events")}
                 >
@@ -129,8 +129,8 @@ const Navbar = () => {
                 <a
                   className={`cursor-pointer ${
                     activeLink === "/partnerships"
-                      ? "text-green-500"
-                      : "hover:text-green-500"
+                      ? "text-primary"
+                      : "hover:text-primary"
                   }`}
                   onClick={() => handleClick("/partnerships")}
                 >
@@ -139,8 +139,8 @@ const Navbar = () => {
                 <a
                   className={`cursor-pointer ${
                     activeLink === "/mentors"
-                      ? "text-green-500"
-                      : "hover:text-green-500"
+                      ? "text-primary"
+                      : "hover:text-primary"
                   }`}
                   onClick={() => handleClick("/mentors")}
                 >
@@ -149,8 +149,8 @@ const Navbar = () => {
                 <a
                   className={`cursor-pointer ${
                     activeLink === "/tenants"
-                      ? "text-green-500"
-                      : "hover:text-green-500"
+                      ? "text-primary"
+                      : "hover:text-primary"
                   }`}
                   onClick={() => handleClick("/tenants")}
                 >
@@ -159,8 +159,8 @@ const Navbar = () => {
                 <a
                   className={`cursor-pointer ${
                     activeLink === "/contact"
-                      ? "text-green-500"
-                      : "hover:text-green-500"
+                      ? "text-primary"
+                      : "hover:text-primary"
                   }`}
                   onClick={() => handleClick("/contact")}
                 >
@@ -181,7 +181,7 @@ const Navbar = () => {
           {/* <a
             href="#"
             className={`cursor-pointer ${
-              activeLink === "/" ? "text-green-500" : "hover:text-green-500"
+              activeLink === "/" ? "text-primary" : "hover:text-primary"
             }`}
             onClick={() => handleClick("/")}
           >
@@ -189,28 +189,28 @@ const Navbar = () => {
           </a> */}
           <a
             className={`cursor-pointer ${
-              activeLink === "/about" ? "text-green-500" : "hover:text-green-500"
+              activeLink === "/about" ? "text-primary" : "hover:text-primary"
             }`}
             onClick={() => handleClick("/about")}
           >
             ABOUT
           </a>
-          <a
+          {/* <a
             className={`cursor-pointer ${
               activeLink === "/innovate"
-                ? "text-green-500"
-                : "hover:text-green-500"
+                ? "text-primary"
+                : "hover:text-primary"
             }`}
             onClick={() => handleClick("/innovate")}
           >
             INNOVATE PAKISTAN
-          </a>
+          </a> */}
           <a
             href="#"
             className={`cursor-pointer ${
               activeLink === "/sectors"
-                ? "text-green-500"
-                : "hover:text-green-500"
+                ? "text-primary"
+                : "hover:text-primary"
             }`}
             onClick={() => handleClick("/sectors")}
           >
@@ -218,7 +218,7 @@ const Navbar = () => {
           </a>
           <a
             className={`cursor-pointer ${
-              activeLink === "/events" ? "text-green-500" : "hover:text-green-500"
+              activeLink === "/events" ? "text-primary" : "hover:text-primary"
             }`}
             onClick={() => handleClick("/events")}
           >
@@ -227,8 +227,8 @@ const Navbar = () => {
           <a
             className={`cursor-pointer ${
               activeLink === "/partnerships"
-                ? "text-green-500"
-                : "hover:text-green-500"
+                ? "text-primary"
+                : "hover:text-primary"
             }`}
             onClick={() => handleClick("/partnerships")}
           >
@@ -237,8 +237,8 @@ const Navbar = () => {
           <a
             className={`cursor-pointer ${
               activeLink === "/mentors"
-                ? "text-green-500"
-                : "hover:text-green-500"
+                ? "text-primary"
+                : "hover:text-primary"
             }`}
             onClick={() => handleClick("/mentors")}
           >
@@ -247,8 +247,8 @@ const Navbar = () => {
           <a
             className={`cursor-pointer ${
               activeLink === "/tenants"
-                ? "text-green-500"
-                : "hover:text-green-500"
+                ? "text-primary"
+                : "hover:text-primary"
             }`}
             onClick={() => handleClick("/tenants")}
           >
@@ -257,15 +257,15 @@ const Navbar = () => {
           <a
             className={`cursor-pointer ${
               activeLink === "/contact"
-                ? "text-green-500"
-                : "hover:text-green-500"
+                ? "text-primary"
+                : "hover:text-primary"
             }`}
             onClick={() => handleClick("/contact")}
           >
             CONTACT
           </a>
           <a
-            className="hover:text-gray-800 bg-green-500 text-black font-bold px-4 py-1 rounded-full cursor-pointer"
+            className="hover:text-gray-800 bg-primary text-black font-bold px-4 py-1 rounded-full cursor-pointer hover:bg-green-700"
             onClick={() => handleClick("/tenancy")}
           >
             PITCH US

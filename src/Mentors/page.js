@@ -106,11 +106,11 @@ const Mentors = () => {
     <div>
       <div className="p-6 lg:p-20 mt-28">
         <h1 className="mb-5 lg:mb-10 text-2xl lg:text-3xl font-extrabold leading-none tracking-tight text-gray-900 text-center flex gap-2">
-          MEET OUR <span className="text-green-400">MENTORS</span>{" "}
+          MEET OUR <span className="text-primary">MENTORS</span>{" "}
         </h1>
         <button
           className={`bg-black text-white p-2 px-3 lg:px-10 rounded-lg mr-1 lg:mr-5 ${
-            selectedDepartment === "All" ? "bg-green-500" : "hover:bg-green-500"
+            selectedDepartment === "All" ? "bg-primary" : "hover:bg-green-500"
           }`}
           onClick={() => setSelectedDepartment("All")}
         >
@@ -120,7 +120,7 @@ const Mentors = () => {
           <button
             className={`bg-black text-white p-2 px-3 lg:px-10 rounded-lg mr-1 lg:mr-5 ${
               selectedDepartment === department
-                ? "bg-green-500"
+                ? "bg-primary"
                 : "hover:bg-green-500"
             }`}
             onClick={() => setSelectedDepartment(department)}

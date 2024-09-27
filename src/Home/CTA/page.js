@@ -43,7 +43,7 @@ const CTA = () => {
           </a>
           <a
             href="#"
-            className="inline-flex items-center justify-center px-3 py-2 me-2 text-sm font-medium text-white bg-green-500 rounded-lg hover:bg-green-800 focus:ring-4 focus:ring-blue-300"
+            className="inline-flex items-center justify-center px-3 py-2 me-2 text-sm font-medium text-white bg-primary rounded-lg hover:bg-green-700 focus:ring-4 focus:ring-blue-300"
             onClick={() => (window.location.href = "/tenancy")}
           >
             Get started{" "}
