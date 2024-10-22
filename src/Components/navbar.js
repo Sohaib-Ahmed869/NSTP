@@ -34,7 +34,6 @@ const Navbar = () => {
       setMobileView(window.innerWidth < 1025);
     });
 
-    
     return () => {
       window.removeEventListener("scroll", handleScroll);
       window.removeEventListener("resize", () => {});
@@ -58,7 +57,10 @@ const Navbar = () => {
         isScrolling ? "bg-opacity-80" : "bg-opacity-100"
       }`}
     >
-      <div className="flex space-x-3 items-center cursor-pointer" onClick={() => handleClick("/")}>
+      <div
+        className="flex space-x-3 items-center cursor-pointer"
+        onClick={() => handleClick("/")}
+      >
         <img src={nstplogo} alt="nstp" className="w-8 lg:w-12" />
         <h1 className="text-lg font-bold">NSTP</h1>
       </div>
@@ -152,6 +154,17 @@ const Navbar = () => {
                       ? "text-primary"
                       : "hover:text-primary"
                   }`}
+                  onClick={() => handleClick("/newsroom")}
+                >
+                  NEWSROOM
+                </a>
+
+                <a
+                  className={`cursor-pointer ${
+                    activeLink === "/tenants"
+                      ? "text-primary"
+                      : "hover:text-primary"
+                  }`}
                   onClick={() => handleClick("/tenants")}
                 >
                   TENANTS
@@ -208,9 +221,7 @@ const Navbar = () => {
           <a
             href="#"
             className={`cursor-pointer ${
-              activeLink === "/sectors"
-                ? "text-primary"
-                : "hover:text-primary"
+              activeLink === "/sectors" ? "text-primary" : "hover:text-primary"
             }`}
             onClick={() => handleClick("/sectors")}
           >
@@ -236,9 +247,7 @@ const Navbar = () => {
           </a>
           <a
             className={`cursor-pointer ${
-              activeLink === "/mentors"
-                ? "text-primary"
-                : "hover:text-primary"
+              activeLink === "/mentors" ? "text-primary" : "hover:text-primary"
             }`}
             onClick={() => handleClick("/mentors")}
           >
@@ -246,9 +255,15 @@ const Navbar = () => {
           </a>
           <a
             className={`cursor-pointer ${
-              activeLink === "/tenants"
-                ? "text-primary"
-                : "hover:text-primary"
+              activeLink === "/tenants" ? "text-primary" : "hover:text-primary"
+            }`}
+            onClick={() => handleClick("/newsroom")}
+          >
+            NEWSROOM
+          </a>
+          <a
+            className={`cursor-pointer ${
+              activeLink === "/tenants" ? "text-primary" : "hover:text-primary"
             }`}
             onClick={() => handleClick("/tenants")}
           >
@@ -256,9 +271,7 @@ const Navbar = () => {
           </a>
           <a
             className={`cursor-pointer ${
-              activeLink === "/contact"
-                ? "text-primary"
-                : "hover:text-primary"
+              activeLink === "/contact" ? "text-primary" : "hover:text-primary"
             }`}
             onClick={() => handleClick("/contact")}
           >

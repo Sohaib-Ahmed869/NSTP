@@ -12,6 +12,8 @@ import Events from "./Events/page";
 import Sectors from "./Sectors/page";
 import Mentors from "./Mentors/page";
 import Tenants from "./Tenants/tenants";
+import Newsroom from "./Newsroom/page";
+import Blog from "./Newsroom/blog";
 
 const Layout = () => {
   return (
@@ -30,6 +32,8 @@ const Layout = () => {
         <Route path="/sectors" element={<Sectors />} />
         <Route path="/mentors" element={<Mentors />} />
         <Route path="/tenants" element={<Tenants />} />
+        <Route path="/newsroom" element={<Newsroom />} />
+        <Route path="/newsroom/:id" element={<Blog />} />
       </Routes>
     </div>
   );
