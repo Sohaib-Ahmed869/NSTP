@@ -14,12 +14,7 @@ const Blog = () => {
     const blogs = await getBlogs();
     setBlogs(blogs);
 
-    setSlicedBlogs(blogs.slice(0, 4));
-    //if the blog is the one in id, dont add it in slicedBlogs
-    if (id) {
-      setSlicedBlogs(blogs.filter((blog) => blog._id !== id).slice(0, 4));
-    }
-
+    setSlicedBlogs(blogs);
     // Find the blog with the ID from the URL
     const blog = blogs.find((blog) => blog._id === id);
     setBlog(blog);
@@ -38,8 +33,8 @@ const Blog = () => {
   if (!blog) return <div>Loading...</div>;
 
   return (
-    <div className="bg-gray-50 rounded-lg mt-20 p-20 flex gap-5 justify-between">
-      <div className="w-2/3">
+    <div className="bg-gray-50 rounded-lg mt-20 p-20 flex gap-5 justify-between max-sm:flex-col max-sm:p-4">
+      <div className="w-2/3 max-sm:w-full">
         <h1 className="text-left font-semibold text-4xl mb-3 max-sm:text-2xl">
           {blog.title}
         </h1>
@@ -80,7 +75,7 @@ const Blog = () => {
           </div>
         )}
       </div>
-      <div className="w-1/3">
+      <div className="w-1/3 max-sm:w-full">
         <div className="flex flex-col gap-4">
           <h1 className="text-left font-semibold text-2xl">More Blogs</h1>
           {slicedBlogs.map((blog) => (
