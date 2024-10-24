@@ -14,10 +14,19 @@ const Blog = () => {
     const blogs = await getBlogs();
     setBlogs(blogs);
 
-    setSlicedBlogs(blogs);
+    // Slice the blogs to show only 3 blogs
+    const slicedBlogs = blogs.slice(0, 4);
+
     // Find the blog with the ID from the URL
     const blog = blogs.find((blog) => blog._id === id);
     setBlog(blog);
+    //check if the main blog is in the sliced blogs
+    if (slicedBlogs.includes(blog)) {
+      //remove the main blog from the sliced blogs
+      const index = slicedBlogs.indexOf(blog);
+      slicedBlogs.splice(index, 1);
+    }
+    setSlicedBlogs(slicedBlogs);
   };
   useEffect(() => {
     fetchBlogs();

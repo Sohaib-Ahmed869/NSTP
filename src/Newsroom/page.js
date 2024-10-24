@@ -31,9 +31,9 @@ const Newsroom = () => {
 
   return (
     <div className=" p-20 mt-10 max-sm:p-4 max-sm:mt-20">
-      <BiNews className="absolute w-96 h-96 text-primary opacity-30 bottom-3 right-3 max-sm:w-10 max-sm:h-10" />
+      {/* <BiNews className="absolute w-96 h-96 text-primary opacity-30 bottom-3 right-3 max-sm:w-10 max-sm:h-10 z-1" /> */}
 
-      <div className="flex w-full justify-between max-sm:flex-col">
+      <div className="flex w-full justify-between max-sm:flex-col z-10">
         <div className="text-left text-primary text-3xl font-bold uppercase flex items-center gap-4">
           <BiNews className="inline-block" />
           <h1>Newsroom</h1>
