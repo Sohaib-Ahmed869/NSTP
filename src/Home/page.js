@@ -125,17 +125,17 @@ const Home = () => {
       >
         <div className="flex items-center lg:p-10 px-5 pt-10 pb-2 mt-28">
           <div>
-            <p className="text-5xl text-white text-left mt-5 font-bold slide-left hollow-text-main">
-              NATIONAL SCIENCE & TECHNOLOGY PARK
+            <p className="text-7xl text-white text-left mt-5 font-bold slide-left hollow-text-main leading-30">
+              NATIONAL SCIENCE<br></br> <span>& TECHNOLOGY PARK</span>
             </p>
             {/* <p className="text-2xl text-white text-left slide-left">
               Defining Innovation
             </p> */}
-            <h3 className="text-xl md:text-5xl text-white italic text-left mt-10 font-bold">
+            <h3 className="text-xl md:text-5xl text-white italic text-left mt-3 font-bold hollow-text-main2">
               Innovation PowerHouse of Pakistan
             </h3>
             <h2 className="text-sm md:text-xl text-white text-left mt-2 italic">
-              Hi-Tech Economic Zone and STZA approved by GoP
+              Hi-Tech Economic Zone approved by GoP
             </h2>
           </div>
         </div>

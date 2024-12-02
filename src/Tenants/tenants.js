@@ -80,10 +80,7 @@ const Tenants = () => {
                     <h1 className="text-lg lg:text-xl leading-none font-semibold lg:font-bold md:text-sm">
                       {tenant.name}
                     </h1>
-                    <p className="leading-none">
-                      Office# {tenant.office_number}, {tenant.wing} -{" "}
-                      {tenant.floor} Floor
-                    </p>
+         
                     {tenant.website && (
                       <a
                         href={tenant.website}

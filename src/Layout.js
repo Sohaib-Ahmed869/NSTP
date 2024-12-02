@@ -14,7 +14,10 @@ import Mentors from "./Mentors/page";
 import Tenants from "./Tenants/tenants";
 import Newsroom from "./Newsroom/page";
 import Blog from "./Newsroom/blog";
-
+import ExploreNSTP from "./Explore/page";
+import CompanyInfoPage from "./Explore/programmes/company";
+import Hatch from "./Explore/programmes/hatch8";
+import Oppurtunities from "./Oppurtunities/page";
 const Layout = () => {
   return (
     <div className="flex flex-col h-screen">
@@ -34,6 +37,10 @@ const Layout = () => {
         <Route path="/tenants" element={<Tenants />} />
         <Route path="/newsroom" element={<Newsroom />} />
         <Route path="/newsroom/:id" element={<Blog />} />
+        <Route path="/explore" element={<ExploreNSTP />} />
+        <Route path="/explore/company" element={<CompanyInfoPage />} />
+        <Route path="/explore/hatch" element={<Hatch />} />
+        <Route path="/oppurtunities" element={<Oppurtunities />} />
       </Routes>
     </div>
   );

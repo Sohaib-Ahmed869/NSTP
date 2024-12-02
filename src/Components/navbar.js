@@ -136,7 +136,7 @@ const Navbar = () => {
                   }`}
                   onClick={() => handleClick("/partnerships")}
                 >
-                  ASSOCIATIONS & PARTNERSHIPS
+                  PARTNERSHIPS
                 </a>
                 <a
                   className={`cursor-pointer ${
@@ -167,7 +167,7 @@ const Navbar = () => {
                   }`}
                   onClick={() => handleClick("/tenants")}
                 >
-                  TENANTS
+                  RESIDENTS
                 </a>
                 <a
                   className={`cursor-pointer ${
@@ -190,7 +190,7 @@ const Navbar = () => {
           )}
         </div>
       ) : (
-        <div className="flex space-x-5 items-center text-sm font-bold">
+        <div className="flex space-x-5 items-center text-md font-bold">
           {/* <a
             href="#"
             className={`cursor-pointer ${
@@ -243,7 +243,7 @@ const Navbar = () => {
             }`}
             onClick={() => handleClick("/partnerships")}
           >
-            ASSOCIATIONS & PARTNERSHIPS
+            PARTNERSHIPS
           </a>
           <a
             className={`cursor-pointer ${
@@ -267,7 +267,7 @@ const Navbar = () => {
             }`}
             onClick={() => handleClick("/tenants")}
           >
-            TENANTS
+            RESIDENTS
           </a>
           <a
             className={`cursor-pointer ${
